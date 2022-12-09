@@ -14,7 +14,7 @@ RETableViewManager 的 Swift 版本
 
 
 ### 实践
-自定义 `SZTableViewCell` 和 `SZTableViewItem` 的子类
+1、自定义 `SZTableViewCell` 和 `SZTableViewItem` 的子类
 ```
 class ImageTitleCell: SZTableViewCell {
     lazy var titleLbl: UILabel = {
@@ -76,4 +76,39 @@ class ImageTitleCellItem : SZTableViewItem {
     }
 }
 
+```
+
+2、创建Manager
+```
+// ViewController
+lazy var tableview: UITableView = {
+    let tblV = UITableView(frame:self.view.bounds, style:.plain)
+    return tblV
+}()
+
+
+// manager
+let tblManager: SZTableViewManager = SZTableViewManager()
+self.view.addSubview(self.tableview)
+
+// 关联tableview
+tblManager.bindTableView(self.tableview)
+tblManager.registerList([
+    SZTitleCellItem.self,
+    ImageTitleCellItem.self
+])
+
+// 创建section
+let section: SZTableViewSection = SZTableViewSection.init()
+
+let item = SZTitleCellItem()
+item.title = "TitleCell \(i)"
+item.action.selected = { (_ vi: SZTableViewItem? ,_ tblMgr: SZTableViewManager) in
+    if let cellItem = vi as? SZTitleCellItem {
+        print("click: \(cellItem.title)")
+    }
+}
+section.addItem(item)
+
+tblManager.addSection(section)
 ```
