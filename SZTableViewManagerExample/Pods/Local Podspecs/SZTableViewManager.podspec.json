@@ -1,0 +1,33 @@
+{
+  "name": "SZTableViewManager",
+  "version": "1",
+  "authors": {
+    "Hui": "173141667@qq.com"
+  },
+  "homepage": "https://github.com/ace2github/SZTableManager",
+  "summary": "Powerful data driven content manager for UITableView.",
+  "source": {
+    "git": "https://github.com/ace2github/SZTableManager.git",
+    "tag": "1"
+  },
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "platforms": {
+    "ios": "7.0"
+  },
+  "requires_arc": true,
+  "source_files": [
+    "SZTableViewManager/Core",
+    "SZTableViewManager/CellItems"
+  ],
+  "public_header_files": [
+    "SZTableViewManager/Core/*.h",
+    "SZTableViewManager/CellItems/*.h"
+  ],
+  "resource_bundles": {
+    "SZTableViewManager": "SZTableViewManager/Resources/*"
+  },
+  "preserve_paths": "SZTableViewManager/Resources"
+}

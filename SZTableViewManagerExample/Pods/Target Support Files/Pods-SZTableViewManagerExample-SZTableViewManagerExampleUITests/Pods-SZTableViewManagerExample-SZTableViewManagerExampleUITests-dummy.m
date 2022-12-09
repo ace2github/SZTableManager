@@ -1,0 +1,5 @@
+#import <Foundation/Foundation.h>
+@interface PodsDummy_Pods_SZTableViewManagerExample_SZTableViewManagerExampleUITests : NSObject
+@end
+@implementation PodsDummy_Pods_SZTableViewManagerExample_SZTableViewManagerExampleUITests
+@end

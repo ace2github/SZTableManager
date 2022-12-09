@@ -1,0 +1,16 @@
+PODS:
+  - SZTableViewManager (1)
+
+DEPENDENCIES:
+  - SZTableViewManager (from `../`)
+
+EXTERNAL SOURCES:
+  SZTableViewManager:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  SZTableViewManager: 52166eca30103c23afdc39b9d865b0f4ff6b6963
+
+PODFILE CHECKSUM: aeb42885dbca4af2a727eb8bb6ab51272685cc9d
+
+COCOAPODS: 1.11.3

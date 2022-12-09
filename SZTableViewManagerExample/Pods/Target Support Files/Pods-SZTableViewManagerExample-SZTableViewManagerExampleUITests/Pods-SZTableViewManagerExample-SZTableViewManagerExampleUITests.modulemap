@@ -1,0 +1,6 @@
+framework module Pods_SZTableViewManagerExample_SZTableViewManagerExampleUITests {
+  umbrella header "Pods-SZTableViewManagerExample-SZTableViewManagerExampleUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
