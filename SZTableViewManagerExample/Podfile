@@ -10,6 +10,7 @@ target 'SZTableViewManagerExample' do
   # Pods for SZTableViewManagerExample
   
   pod 'SnapKit'
+  pod 'Kingfisher'
 
   target 'SZTableViewManagerExampleTests' do
     inherit! :search_paths

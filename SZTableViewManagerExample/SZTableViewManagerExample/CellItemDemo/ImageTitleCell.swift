@@ -32,7 +32,7 @@ class ImageTitleCell: SZTableViewCell {
             self.iconImgV.snp.makeConstraints { make in
                 make.size.equalTo(CGSize.init(width: 50, height: 50))
                 make.centerY.equalTo(self.contentView)
-                make.leading.equalTo(self.contentView).offset(5)
+                make.leading.equalTo(self.contentView).offset(15)
             }
 
             self.titleLbl.frame = CGRect(x: 60, y: 5, width: 150, height: 20)

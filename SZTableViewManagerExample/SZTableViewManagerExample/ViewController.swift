@@ -26,7 +26,8 @@ class ViewController: UIViewController {
         
         tblManager.registerList([
             SZTitleCellItem.self,
-            ImageTitleCellItem.self
+            ImageTitleCellItem.self,
+            BigImageCellItem.self
         ])
         
         let section: SZTableViewSection = SZTableViewSection.init()
@@ -40,8 +41,9 @@ class ViewController: UIViewController {
 //        section.footerView = fv
 //        section.footerHeight = 60
         
+        var imgIndex = 1
         for i in 0...100 {
-            let type = i % 2
+            let type = i % 3
             switch type {
             case 0:
                 let item = SZTitleCellItem()
@@ -58,6 +60,16 @@ class ViewController: UIViewController {
                 item.action.selected = { (_ vi: SZTableViewItem? ,_ tblMgr: SZTableViewManager) in
                     if let cellItem = vi as? ImageTitleCellItem {
                         print("click: \(cellItem.title)")
+                    }
+                }
+                section.addItem(item)
+            case 2:
+                let item = BigImageCellItem()
+                item.url = "img\(imgIndex%4 + 1)"
+                imgIndex += 1
+                item.action.selected = { (_ vi: SZTableViewItem? ,_ tblMgr: SZTableViewManager) in
+                    if let cellItem = vi as? BigImageCellItem {
+                        print("click: \(cellItem.url)")
                     }
                 }
                 section.addItem(item)

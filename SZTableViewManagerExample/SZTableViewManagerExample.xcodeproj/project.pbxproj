@@ -14,12 +14,13 @@
 		A367CE5E29430A9A00BEB024 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A367CE5D29430A9A00BEB024 /* SceneDelegate.swift */; };
 		A367CE6029430A9A00BEB024 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A367CE5F29430A9A00BEB024 /* ViewController.swift */; };
 		A367CE6329430A9A00BEB024 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A367CE6129430A9A00BEB024 /* Main.storyboard */; };
-		A367CE6529430A9C00BEB024 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A367CE6429430A9C00BEB024 /* Assets.xcassets */; };
 		A367CE6829430A9C00BEB024 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A367CE6629430A9C00BEB024 /* LaunchScreen.storyboard */; };
 		A367CE7329430A9C00BEB024 /* SZTableViewManagerExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A367CE7229430A9C00BEB024 /* SZTableViewManagerExampleTests.swift */; };
 		A367CE7D29430A9C00BEB024 /* SZTableViewManagerExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A367CE7C29430A9C00BEB024 /* SZTableViewManagerExampleUITests.swift */; };
 		A367CE7F29430A9C00BEB024 /* SZTableViewManagerExampleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A367CE7E29430A9C00BEB024 /* SZTableViewManagerExampleUITestsLaunchTests.swift */; };
 		A367CE8D29431DA300BEB024 /* ImageTitleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A367CE8C29431DA300BEB024 /* ImageTitleCell.swift */; };
+		A3C7545A2943332C001F8A9A /* BigImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C754592943332C001F8A9A /* BigImageCell.swift */; };
+		A3C7545C294335A3001F8A9A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3C7545B294335A3001F8A9A /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,7 +50,6 @@
 		A367CE5D29430A9A00BEB024 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		A367CE5F29430A9A00BEB024 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A367CE6229430A9A00BEB024 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		A367CE6429430A9C00BEB024 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A367CE6729430A9C00BEB024 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A367CE6929430A9C00BEB024 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A367CE6E29430A9C00BEB024 /* SZTableViewManagerExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SZTableViewManagerExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -59,6 +59,8 @@
 		A367CE7E29430A9C00BEB024 /* SZTableViewManagerExampleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SZTableViewManagerExampleUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		A367CE8C29431DA300BEB024 /* ImageTitleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageTitleCell.swift; sourceTree = "<group>"; };
 		A38CE21E9141A9D1247E59F4 /* Pods_SZTableViewManagerExample_SZTableViewManagerExampleUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SZTableViewManagerExample_SZTableViewManagerExampleUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3C754592943332C001F8A9A /* BigImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigImageCell.swift; sourceTree = "<group>"; };
+		A3C7545B294335A3001F8A9A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = SOURCE_ROOT; };
 		BFDACB3EFFAB1484E46873AE /* Pods-SZTableViewManagerExampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SZTableViewManagerExampleTests.release.xcconfig"; path = "Target Support Files/Pods-SZTableViewManagerExampleTests/Pods-SZTableViewManagerExampleTests.release.xcconfig"; sourceTree = "<group>"; };
 		CE0E6E7F0E20D2DB8F04DEF1 /* Pods-SZTableViewManagerExampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SZTableViewManagerExampleTests.debug.xcconfig"; path = "Target Support Files/Pods-SZTableViewManagerExampleTests/Pods-SZTableViewManagerExampleTests.debug.xcconfig"; sourceTree = "<group>"; };
 		D610A003DDE3C7792CF009D3 /* Pods_SZTableViewManagerExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SZTableViewManagerExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -132,8 +134,8 @@
 				A367CE5B29430A9A00BEB024 /* AppDelegate.swift */,
 				A367CE5D29430A9A00BEB024 /* SceneDelegate.swift */,
 				A367CE5F29430A9A00BEB024 /* ViewController.swift */,
+				A3C7545B294335A3001F8A9A /* Assets.xcassets */,
 				A367CE6129430A9A00BEB024 /* Main.storyboard */,
-				A367CE6429430A9C00BEB024 /* Assets.xcassets */,
 				A367CE6629430A9C00BEB024 /* LaunchScreen.storyboard */,
 				A367CE6929430A9C00BEB024 /* Info.plist */,
 			);
@@ -161,6 +163,7 @@
 			isa = PBXGroup;
 			children = (
 				A367CE8C29431DA300BEB024 /* ImageTitleCell.swift */,
+				A3C754592943332C001F8A9A /* BigImageCell.swift */,
 			);
 			path = CellItemDemo;
 			sourceTree = "<group>";
@@ -288,7 +291,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A367CE6829430A9C00BEB024 /* LaunchScreen.storyboard in Resources */,
-				A367CE6529430A9C00BEB024 /* Assets.xcassets in Resources */,
+				A3C7545C294335A3001F8A9A /* Assets.xcassets in Resources */,
 				A367CE6329430A9A00BEB024 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -418,6 +421,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A367CE8D29431DA300BEB024 /* ImageTitleCell.swift in Sources */,
+				A3C7545A2943332C001F8A9A /* BigImageCell.swift in Sources */,
 				A367CE6029430A9A00BEB024 /* ViewController.swift in Sources */,
 				A367CE5C29430A9A00BEB024 /* AppDelegate.swift in Sources */,
 				A367CE5E29430A9A00BEB024 /* SceneDelegate.swift in Sources */,
