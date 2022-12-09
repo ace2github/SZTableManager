@@ -40,6 +40,15 @@ class ImageTitleCell: SZTableViewCell {
             self.titleLbl.text = cellItem.title
         }
     }
+    
+    // cell will display
+    override func willAppear(_ item: SZTableViewItem?) {
+        
+    }
+    // cell did end display
+    override func didDisappear(_ item: SZTableViewItem?) {
+        
+    }
 }
 
 
