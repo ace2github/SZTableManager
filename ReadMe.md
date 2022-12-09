@@ -6,8 +6,11 @@ RETableViewManager 的 Swift 版本
 * 核心理念：数据驱动
 
 ### 实践
-0、理论 item-cell 是一一对应的关系 
-1、Tableview的移动和删除逻辑（tbd）
+* 0、理论 item-cell 是一一对应的关系 
+
+
+* 1、Tableview的移动和删除逻辑（tbd）
+* 2、UITableViewDelegate的外部代理出去（tbd）
 
 
 ### 实践
@@ -39,7 +42,7 @@ class ImageTitleCell: SZTableViewCell {
             self.contentView.addSubview(self.titleLbl)
         }
     }
-    
+
     // cell数据的更新
     override func didUpdate(_ item: SZTableViewItem?) {
         if let cellItem = item as? ImageTitleCellItem {
