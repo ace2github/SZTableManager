@@ -21,6 +21,9 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
         self.view.addSubview(self.tableview)
         tblManager.bindTableView(self.tableview)
+        
+        self.tableview.separatorStyle = .singleLine
+        
         tblManager.registerList([
             SZTitleCellItem.self,
             ImageTitleCellItem.self
@@ -28,15 +31,14 @@ class ViewController: UIViewController {
         
         let section: SZTableViewSection = SZTableViewSection.init()
         let hv = UIView(frame: CGRect(x: 0, y: 0, width: self.view.bounds.width, height: 60))
-        hv.backgroundColor = .orange
+        hv.backgroundColor = .white
         section.headerView = hv
         section.headerHeight = 60
-        
-        
-        let fv = UIView(frame: CGRect(x: 0, y: 0, width: self.view.bounds.width, height: 60))
-        fv.backgroundColor = .red
-        section.footerView = fv
-        section.footerHeight = 60
+
+//        let fv = UIView(frame: CGRect(x: 0, y: 0, width: self.view.bounds.width, height: 60))
+//        fv.backgroundColor = .red
+//        section.footerView = fv
+//        section.footerHeight = 60
         
         for i in 0...100 {
             let type = i % 2

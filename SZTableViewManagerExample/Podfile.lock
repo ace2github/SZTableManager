@@ -1,16 +1,23 @@
 PODS:
-  - SZTableViewManager (1)
+  - SnapKit (4.2.0)
+  - SZTableViewManager (0.1)
 
 DEPENDENCIES:
+  - SnapKit
   - SZTableViewManager (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - SnapKit
 
 EXTERNAL SOURCES:
   SZTableViewManager:
     :path: "../"
 
 SPEC CHECKSUMS:
-  SZTableViewManager: 52166eca30103c23afdc39b9d865b0f4ff6b6963
+  SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
+  SZTableViewManager: 2bd9bbeabaf277c16ba1309901958f6cc11fd6f4
 
-PODFILE CHECKSUM: aeb42885dbca4af2a727eb8bb6ab51272685cc9d
+PODFILE CHECKSUM: 00dd75408b76f843ced0e868060b93214d912597
 
 COCOAPODS: 1.11.3

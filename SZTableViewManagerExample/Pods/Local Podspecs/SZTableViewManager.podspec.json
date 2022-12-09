@@ -1,6 +1,6 @@
 {
   "name": "SZTableViewManager",
-  "version": "1",
+  "version": "0.1",
   "authors": {
     "Hui": "173141667@qq.com"
   },
@@ -8,7 +8,7 @@
   "summary": "Powerful data driven content manager for UITableView.",
   "source": {
     "git": "https://github.com/ace2github/SZTableManager.git",
-    "tag": "1"
+    "tag": "0.1"
   },
   "license": {
     "type": "MIT",

@@ -7,6 +7,7 @@
 
 import Foundation
 import SZTableViewManager
+import SnapKit
 
 class ImageTitleCell: SZTableViewCell {
     lazy var titleLbl: UILabel = {
@@ -28,9 +29,18 @@ class ImageTitleCell: SZTableViewCell {
             print("\(#function) \(cellItem.title)")
             self.iconImgV.frame = CGRect(x: 5, y: 5, width: 50, height: 50)
             self.contentView.addSubview(self.iconImgV)
+            self.iconImgV.snp.makeConstraints { make in
+                make.size.equalTo(CGSize.init(width: 50, height: 50))
+                make.centerY.equalTo(self.contentView)
+                make.leading.equalTo(self.contentView).offset(5)
+            }
 
             self.titleLbl.frame = CGRect(x: 60, y: 5, width: 150, height: 20)
             self.contentView.addSubview(self.titleLbl)
+            self.titleLbl.snp.makeConstraints { (make) in
+                make.leading.equalTo(self.iconImgV.snp.trailing).offset(10.0)
+                make.centerY.equalTo(self.contentView)
+            }
         }
     }
 

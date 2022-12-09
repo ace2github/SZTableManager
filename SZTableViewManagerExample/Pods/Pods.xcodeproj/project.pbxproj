@@ -7,118 +7,220 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0264E878B23812B6BA8981C0517A3C3C /* SZTableViewDefines.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1388CB0ADCE2CD329ADED065B967E39B /* SZTableViewDefines.swift */; };
-		104A680219BABA5575F2CAF3758FE79C /* Pods-SZTableViewManagerExample-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 37A02E653C7E2BDDEF130F087C1599C3 /* Pods-SZTableViewManagerExample-dummy.m */; };
-		36D0C2C02D737C0B7D18B9DAB173694D /* SZTableViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803846F9E0DAAC68E827F93B8318EB5F /* SZTableViewManager.swift */; };
-		3CBA143AEF8610F4D6405B85F275E847 /* Pods-SZTableViewManagerExample-SZTableViewManagerExampleUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F96AEABFA0B7B45FE2A9BDA5F5FC5543 /* Pods-SZTableViewManagerExample-SZTableViewManagerExampleUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0264E878B23812B6BA8981C0517A3C3C /* SZTableViewDefines.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9F027F23F1073A48947E9F0E5B0371 /* SZTableViewDefines.swift */; };
+		0796336CEFF601AE1247F220908D6122 /* LayoutConstraintItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00EFECCF7F4E78B3021A97741173FC2F /* LayoutConstraintItem.swift */; };
+		07C2A8D8E0CC8EAB5F37E03332631748 /* ConstraintMakerExtendable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7478F64EB1BC7B207D2133307B4B5015 /* ConstraintMakerExtendable.swift */; };
+		1422F4D1C7597A7641CB3B433295AE1C /* ConstraintConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3499D06B7741051669EFC6E6A929A57 /* ConstraintConfig.swift */; };
+		16D24E170C5A4E3991F9C378259C9E43 /* UILayoutSupport+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DCD15E7A2AFE53263B4335C9B3D9813 /* UILayoutSupport+Extensions.swift */; };
+		187AEAEFABA30C23783DE0BA67CDB53F /* SnapKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AB1B5C574EC29B2A222C6281A4A0B3BC /* SnapKit-dummy.m */; };
+		19464E5871366D267456CAAF81B2E2D6 /* ConstraintMakerEditable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766CC484A3E4DD46665D9EF06679B007 /* ConstraintMakerEditable.swift */; };
+		24AED108806F65EA9BBEED416751D5FF /* ConstraintRelatableTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807F5279ECA1E77BEC4455F1645BF6D7 /* ConstraintRelatableTarget.swift */; };
+		31CB0E17706E0922E4E694012195751C /* ConstraintMultiplierTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51566D0AF41FEBB1DD1BB7CA86B07225 /* ConstraintMultiplierTarget.swift */; };
+		35FB78B2F8BD0E0A1F1DAB88DD5F6525 /* ConstraintConstantTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F10AA484FE3CE9A074FF4CA855D1C7 /* ConstraintConstantTarget.swift */; };
+		36D0C2C02D737C0B7D18B9DAB173694D /* SZTableViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 909B45F39574E0AE6D9C2C9A4CD6B056 /* SZTableViewManager.swift */; };
+		36E3317EDE9829C3622AE63D3B5D0D1D /* ConstraintLayoutGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 460FE348E93FFA86EF28B0DE4C0F4A7D /* ConstraintLayoutGuide.swift */; };
+		378114D32B118CCD3A3049B7A061AAF9 /* Pods-SZTableViewManagerExample-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6A9DE73EEDF5A7C1C7467B276311CCE9 /* Pods-SZTableViewManagerExample-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3AD3BE671BD40FE62762F7D9E49E6CE9 /* ConstraintDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CACD95C459F4D08F9C1E57893F55090 /* ConstraintDescription.swift */; };
+		441B24D9189D26152CC0DA97B741E833 /* ConstraintLayoutSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8D6B4E640B3D09C454814F36856E2EE /* ConstraintLayoutSupport.swift */; };
+		45940CC7CB8561893AE9F47E2EFDE986 /* ConstraintInsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C81B0C23EADA502AA9895105ACF93AD /* ConstraintInsets.swift */; };
+		468C7838D0806615EB279CFE359B9E7C /* ConstraintMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F8B378A0D395518DE2DD11AE4B6F98 /* ConstraintMaker.swift */; };
+		46914E49E8B39F271CD11F5FB30FD166 /* ConstraintLayoutGuideDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7413D1E3B3849A8B98CECBCB1E3EA510 /* ConstraintLayoutGuideDSL.swift */; };
 		4A4B00773549BF0AA3494B8A69F3B93A /* SZTableViewManager-SZTableViewManager in Resources */ = {isa = PBXBuildFile; fileRef = EADF256B2C089D3CC30F5D440B0E9631 /* SZTableViewManager-SZTableViewManager */; };
-		4D7C937B0DD47ACFC34C083C318F4E2F /* Pods-SZTableViewManagerExample-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6A9DE73EEDF5A7C1C7467B276311CCE9 /* Pods-SZTableViewManagerExample-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		525E445D6A1EF6B67EF4D0455FC5AAFA /* Debugging.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00BB2CE9C8C7607CDA3E1B49246B760E /* Debugging.swift */; };
 		6CA3229D555FFF945A5A909CCBED138D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		7BD15950C569FF225094CC1B89F19F52 /* SZTableViewSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2806249ED3C98AC9205DD55F85A6C1B /* SZTableViewSection.swift */; };
-		884B5C0FA8A93C2F930DB8766F48BACA /* SZTableViewManager-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CE35F799FF4EDE38ED2FF66BD2B50401 /* SZTableViewManager-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6FCEC1D82466A0640C067970C142D6FC /* ConstraintMakerFinalizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3146B382C3292E28917B8CF4356923 /* ConstraintMakerFinalizable.swift */; };
+		717D0C947E8F27CAB5675FCF0D200DB9 /* ConstraintInsetTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5597D051B6350A61151221E8BEE0D0 /* ConstraintInsetTarget.swift */; };
+		72744A9122CF44B2DEE0151B85CAB0CC /* LayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103B8B35502B427E3F46D5237C681DCB /* LayoutConstraint.swift */; };
+		7A7E4189DEE2CD9B82CFBEA1C949BE15 /* ConstraintViewDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C2F3330EB4A39DC3B20B40D8981F66 /* ConstraintViewDSL.swift */; };
+		7BD15950C569FF225094CC1B89F19F52 /* SZTableViewSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7C40E01877B0E97F9C8C315E9B37C3 /* SZTableViewSection.swift */; };
+		7CFE8C5EF5C3EAB15FF1C4B24052875F /* ConstraintOffsetTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91102F716DCE9969F79474488AEA2BFD /* ConstraintOffsetTarget.swift */; };
+		884B5C0FA8A93C2F930DB8766F48BACA /* SZTableViewManager-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5308DECC7E060D0E2FA2AD60B1FB5B24 /* SZTableViewManager-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8E0543D7DBDE4156FBD8809388CF673E /* Pods-SZTableViewManagerExampleTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E58AEAAB9C51AC989DC1FF0015EBCD24 /* Pods-SZTableViewManagerExampleTests-dummy.m */; };
+		8E71E7A05B4469463B55DB720B699C60 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		8F488574ECEADDC9413AE8903A76AFDA /* ConstraintLayoutGuide+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4230A725EDA6C25944C70BFF90CCC3F4 /* ConstraintLayoutGuide+Extensions.swift */; };
 		8FE1DF6399BAB9EAAFCAED47F3AC02B7 /* Pods-SZTableViewManagerExampleTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CA7D90EEC50E49BDA9B1CA72D4419F98 /* Pods-SZTableViewManagerExampleTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		94FE297EF5474933073D62936D9A7224 /* ConstraintPriority.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F1A25F3C9883F6A0A4428D8AFC44B2 /* ConstraintPriority.swift */; };
+		9825456B68AAF3CD9F1137377D738A9D /* Constraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6E9D9A9A36CAC6827C30D02B1B414B /* Constraint.swift */; };
+		99BA19092DA09C3A52F275A0B367EC04 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		9AD08B51D408D58639348CC577DD988B /* ConstraintView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5975457FA577D667D0257900DF1D4FDD /* ConstraintView+Extensions.swift */; };
+		9C0A3ED1F524AA4C4147169AD20D9078 /* Typealiases.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D8610217E033F12A628571FD3D1684 /* Typealiases.swift */; };
 		A48089459E08B4B2733272F3DC2D2B23 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		A726FE022050E3F4DBDD211A81C9379C /* SZTableViewItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E533050E7FDDDB24C2E8465744072D14 /* SZTableViewItem.swift */; };
-		ACEA2E41FDC2DA417E787218053F68D0 /* SZTableViewManager-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A2B447CF961C55D78303B38B41D49E30 /* SZTableViewManager-dummy.m */; };
-		B4AD5B7A432FBB90F2327CED7BE5C540 /* SZTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B4AE2B258BA981FDA16C0725F0C84C /* SZTableViewCell.swift */; };
-		B99BC36775AEC0787B711344BFBE6DE0 /* SZTitleCellItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68CF02AFFD972A3B293C8DFBD5FE7202 /* SZTitleCellItem.swift */; };
-		C46F171630B0AF76A13262B4465155A3 /* SZTitleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988F7A63CDA2FFA1225B2F45F9460168 /* SZTitleCell.swift */; };
-		D2E6C2A2D8E4806EB4EDBE474B9F8B4E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		E23D1C4BF1AC815F35C35CF29ACF8A46 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		FCB1E1F3E65E37C8832D19FA54FE0C36 /* Pods-SZTableViewManagerExample-SZTableViewManagerExampleUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EFF111A66EC4DDC81402F618E619980 /* Pods-SZTableViewManagerExample-SZTableViewManagerExampleUITests-dummy.m */; };
+		A726FE022050E3F4DBDD211A81C9379C /* SZTableViewItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16FAC8044372906C246FAEC666AD3489 /* SZTableViewItem.swift */; };
+		A8D62FB2DCD20114129953F7A01F74B4 /* ConstraintLayoutSupportDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = C89552C29B3090667057D8E56D2C3D81 /* ConstraintLayoutSupportDSL.swift */; };
+		ACEA2E41FDC2DA417E787218053F68D0 /* SZTableViewManager-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9FDCDE0322733320DD5753C2ECB253 /* SZTableViewManager-dummy.m */; };
+		B197B2B88A4E00F5611E5C3B0BC0EC52 /* ConstraintItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB01221055BDABDD47999C671F4A9BD /* ConstraintItem.swift */; };
+		B4AD5B7A432FBB90F2327CED7BE5C540 /* SZTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7B17068C0166E541DAC7C4AAD194F5 /* SZTableViewCell.swift */; };
+		B603DB110705BA3AB021967E65955F14 /* Pods-SZTableViewManagerExample-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 37A02E653C7E2BDDEF130F087C1599C3 /* Pods-SZTableViewManagerExample-dummy.m */; };
+		B6600A7FA07908F5CBC4E5D90331AA53 /* ConstraintRelation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C80000E1CA4369B2E82035A1825982D /* ConstraintRelation.swift */; };
+		B99BC36775AEC0787B711344BFBE6DE0 /* SZTitleCellItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808F9992646F73DDF13B620076F2619D /* SZTitleCellItem.swift */; };
+		BBF7B32FB70AEDE982CDA068ED3578BA /* SnapKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 42EDC7C7A525E5D5191CA0B7A731184D /* SnapKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C1EDC4C48B6BE33645DB882A48C8076D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		C46F171630B0AF76A13262B4465155A3 /* SZTitleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 146B894D738FF88F79B7261CBE23EF93 /* SZTitleCell.swift */; };
+		D78F6A95A088F7E619745556DAFE9E0A /* ConstraintMakerRelatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E887F5BC85E664CAF1EAD58DB6EF027D /* ConstraintMakerRelatable.swift */; };
+		DC4424F1C3EDE2DFD10159ED87048E99 /* ConstraintDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA070155DE459F51A650261C10EA9CB /* ConstraintDSL.swift */; };
+		F64213220213FD9F6AEB344C7541869A /* ConstraintMakerPriortizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3DD21F59E9ABB6CFA8B14FAEE0B52DA /* ConstraintMakerPriortizable.swift */; };
+		F74B5978371D6E071955B81535B7BFEE /* ConstraintPriorityTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6199B0E33536DD7E23A71C2A1DFA3CB3 /* ConstraintPriorityTarget.swift */; };
+		F7ADF88139C23B1186F5784FA590E92C /* ConstraintAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F2D0C7209EFA17EFECCB8074F0E9071 /* ConstraintAttributes.swift */; };
+		FAF1E353B2BFBCF9E8C5DF3651A517D1 /* Pods-SZTableViewManagerExample-SZTableViewManagerExampleUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EFF111A66EC4DDC81402F618E619980 /* Pods-SZTableViewManagerExample-SZTableViewManagerExampleUITests-dummy.m */; };
+		FED883FB451220BEC4417EA345BE612F /* ConstraintView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A3284DB6C9BFEF88606695BBC11E150 /* ConstraintView.swift */; };
+		FEFB02437E8DA1AD8CE7713F92969987 /* Pods-SZTableViewManagerExample-SZTableViewManagerExampleUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F96AEABFA0B7B45FE2A9BDA5F5FC5543 /* Pods-SZTableViewManagerExample-SZTableViewManagerExampleUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		104302BD6C688232A7BDF1051A5FEA48 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 491850F6F0BD30ACACFB4C7E7EE0F3EB;
-			remoteInfo = SZTableViewManager;
-		};
-		244257332FE1B852F8CB5FC124CE6164 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 491850F6F0BD30ACACFB4C7E7EE0F3EB;
-			remoteInfo = SZTableViewManager;
-		};
-		3AA31AA258F566F30D53014FC39B9C3D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = D2630AC885730A6C53805D1EDEFCA85C;
-			remoteInfo = "SZTableViewManager-SZTableViewManager";
-		};
-		FCC8B66247DA08CECCBB42B103615D3C /* PBXContainerItemProxy */ = {
+		2157E797B384EB8002AF6C39D750FCF7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 12B865A60F7BD7C28890020B6C2B9645;
 			remoteInfo = "Pods-SZTableViewManagerExample";
 		};
+		28BAD8736697E05031D872593DFF2FB7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D2630AC885730A6C53805D1EDEFCA85C;
+			remoteInfo = "SZTableViewManager-SZTableViewManager";
+		};
+		3332BC1F12E17A96E2425A984399BDF4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 491850F6F0BD30ACACFB4C7E7EE0F3EB;
+			remoteInfo = SZTableViewManager;
+		};
+		63566F91E6C8F418D74EE88144652DDC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 491850F6F0BD30ACACFB4C7E7EE0F3EB;
+			remoteInfo = SZTableViewManager;
+		};
+		BFD8660599D5F23D15AE92BDA85E74F0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 19622742EBA51E823D6DAE3F8CDBFAD4;
+			remoteInfo = SnapKit;
+		};
+		D838D01B0689E60959EA345D50FE4A21 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 19622742EBA51E823D6DAE3F8CDBFAD4;
+			remoteInfo = SnapKit;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		00BB2CE9C8C7607CDA3E1B49246B760E /* Debugging.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Debugging.swift; path = Source/Debugging.swift; sourceTree = "<group>"; };
+		00EFECCF7F4E78B3021A97741173FC2F /* LayoutConstraintItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutConstraintItem.swift; path = Source/LayoutConstraintItem.swift; sourceTree = "<group>"; };
 		01EA12BDE933AA80291ED075AD5484AC /* Pods-SZTableViewManagerExample-SZTableViewManagerExampleUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SZTableViewManagerExample-SZTableViewManagerExampleUITests.release.xcconfig"; sourceTree = "<group>"; };
 		0986842C7F8B3D4C8A6C97AE0BB276C7 /* Pods-SZTableViewManagerExample-SZTableViewManagerExampleUITests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-SZTableViewManagerExample-SZTableViewManagerExampleUITests"; path = Pods_SZTableViewManagerExample_SZTableViewManagerExampleUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		09C2F3330EB4A39DC3B20B40D8981F66 /* ConstraintViewDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintViewDSL.swift; path = Source/ConstraintViewDSL.swift; sourceTree = "<group>"; };
 		0B574DE3C3B0F7017E2D135EF48D0305 /* Pods-SZTableViewManagerExampleTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SZTableViewManagerExampleTests-Info.plist"; sourceTree = "<group>"; };
-		0E358876A0922A3F9A8F2AA3578BDEC9 /* SZTableViewManager-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SZTableViewManager-prefix.pch"; sourceTree = "<group>"; };
-		1388CB0ADCE2CD329ADED065B967E39B /* SZTableViewDefines.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SZTableViewDefines.swift; sourceTree = "<group>"; };
+		103B8B35502B427E3F46D5237C681DCB /* LayoutConstraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutConstraint.swift; path = Source/LayoutConstraint.swift; sourceTree = "<group>"; };
+		146B894D738FF88F79B7261CBE23EF93 /* SZTitleCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SZTitleCell.swift; sourceTree = "<group>"; };
+		16FAC8044372906C246FAEC666AD3489 /* SZTableViewItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SZTableViewItem.swift; sourceTree = "<group>"; };
+		1C81B0C23EADA502AA9895105ACF93AD /* ConstraintInsets.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintInsets.swift; path = Source/ConstraintInsets.swift; sourceTree = "<group>"; };
 		1D20DA0BD484FEB083DDA53519E121DF /* Pods-SZTableViewManagerExample-SZTableViewManagerExampleUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SZTableViewManagerExample-SZTableViewManagerExampleUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		24E5A5976EFEB24CC112BEFB7C2F5B73 /* SZTableViewManager.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SZTableViewManager.modulemap; sourceTree = "<group>"; };
+		29693EC049D6AC1AE94A7B743D01A9AB /* SnapKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SnapKit.debug.xcconfig; sourceTree = "<group>"; };
 		318178045D53633A58E8A4E1361A367F /* Pods-SZTableViewManagerExample-SZTableViewManagerExampleUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SZTableViewManagerExample-SZTableViewManagerExampleUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		37A02E653C7E2BDDEF130F087C1599C3 /* Pods-SZTableViewManagerExample-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SZTableViewManagerExample-dummy.m"; sourceTree = "<group>"; };
+		37F1A25F3C9883F6A0A4428D8AFC44B2 /* ConstraintPriority.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintPriority.swift; path = Source/ConstraintPriority.swift; sourceTree = "<group>"; };
+		383224F60A6F64BC8D0D473A6EE1729F /* SZTableViewManager-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SZTableViewManager-prefix.pch"; sourceTree = "<group>"; };
+		3B569D02FFB2C8143A71D4511C970AC4 /* SnapKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SnapKit-prefix.pch"; sourceTree = "<group>"; };
 		3EFF111A66EC4DDC81402F618E619980 /* Pods-SZTableViewManagerExample-SZTableViewManagerExampleUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SZTableViewManagerExample-SZTableViewManagerExampleUITests-dummy.m"; sourceTree = "<group>"; };
+		4230A725EDA6C25944C70BFF90CCC3F4 /* ConstraintLayoutGuide+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ConstraintLayoutGuide+Extensions.swift"; path = "Source/ConstraintLayoutGuide+Extensions.swift"; sourceTree = "<group>"; };
+		42EDC7C7A525E5D5191CA0B7A731184D /* SnapKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SnapKit-umbrella.h"; sourceTree = "<group>"; };
+		460FE348E93FFA86EF28B0DE4C0F4A7D /* ConstraintLayoutGuide.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutGuide.swift; path = Source/ConstraintLayoutGuide.swift; sourceTree = "<group>"; };
 		4650B59B4ED752B8A58FB30F452AAC40 /* Pods-SZTableViewManagerExampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SZTableViewManagerExampleTests.release.xcconfig"; sourceTree = "<group>"; };
+		46F8B378A0D395518DE2DD11AE4B6F98 /* ConstraintMaker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMaker.swift; path = Source/ConstraintMaker.swift; sourceTree = "<group>"; };
 		482D08C9E06C4C125DFD1AFA6677FCDE /* SZTableViewManager */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SZTableViewManager; path = SZTableViewManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4DCD15E7A2AFE53263B4335C9B3D9813 /* UILayoutSupport+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UILayoutSupport+Extensions.swift"; path = "Source/UILayoutSupport+Extensions.swift"; sourceTree = "<group>"; };
 		4EAAE66C597C216CCDBC0D7D6901AA95 /* Pods-SZTableViewManagerExample-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SZTableViewManagerExample-frameworks.sh"; sourceTree = "<group>"; };
+		51566D0AF41FEBB1DD1BB7CA86B07225 /* ConstraintMultiplierTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMultiplierTarget.swift; path = Source/ConstraintMultiplierTarget.swift; sourceTree = "<group>"; };
+		51832E37ED09A3221A62CC9719BB8E6A /* SZTableViewManager.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SZTableViewManager.release.xcconfig; sourceTree = "<group>"; };
+		5308DECC7E060D0E2FA2AD60B1FB5B24 /* SZTableViewManager-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SZTableViewManager-umbrella.h"; sourceTree = "<group>"; };
 		560EB8323F17A53BC2C8356F7351186F /* Pods-SZTableViewManagerExample.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SZTableViewManagerExample.modulemap"; sourceTree = "<group>"; };
-		68CF02AFFD972A3B293C8DFBD5FE7202 /* SZTitleCellItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SZTitleCellItem.swift; sourceTree = "<group>"; };
+		5975457FA577D667D0257900DF1D4FDD /* ConstraintView+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ConstraintView+Extensions.swift"; path = "Source/ConstraintView+Extensions.swift"; sourceTree = "<group>"; };
+		6199B0E33536DD7E23A71C2A1DFA3CB3 /* ConstraintPriorityTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintPriorityTarget.swift; path = Source/ConstraintPriorityTarget.swift; sourceTree = "<group>"; };
+		61BF6319389D01D5F203E3604A94295D /* SZTableViewManager.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = SZTableViewManager.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		68D73C1BA81D845284F414CB2C40397F /* Pods-SZTableViewManagerExample-SZTableViewManagerExampleUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SZTableViewManagerExample-SZTableViewManagerExampleUITests-frameworks.sh"; sourceTree = "<group>"; };
 		6A9DE73EEDF5A7C1C7467B276311CCE9 /* Pods-SZTableViewManagerExample-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SZTableViewManagerExample-umbrella.h"; sourceTree = "<group>"; };
 		6B32D2CE8F2DB38ACEF5D9EFFD489E2F /* Pods-SZTableViewManagerExampleTests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-SZTableViewManagerExampleTests"; path = Pods_SZTableViewManagerExampleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6CACD95C459F4D08F9C1E57893F55090 /* ConstraintDescription.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintDescription.swift; path = Source/ConstraintDescription.swift; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		7413D1E3B3849A8B98CECBCB1E3EA510 /* ConstraintLayoutGuideDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutGuideDSL.swift; path = Source/ConstraintLayoutGuideDSL.swift; sourceTree = "<group>"; };
+		7478F64EB1BC7B207D2133307B4B5015 /* ConstraintMakerExtendable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerExtendable.swift; path = Source/ConstraintMakerExtendable.swift; sourceTree = "<group>"; };
+		766CC484A3E4DD46665D9EF06679B007 /* ConstraintMakerEditable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerEditable.swift; path = Source/ConstraintMakerEditable.swift; sourceTree = "<group>"; };
 		78C09A8B01D1509F8BBC3F952F194255 /* Pods-SZTableViewManagerExample-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SZTableViewManagerExample-acknowledgements.markdown"; sourceTree = "<group>"; };
+		7A3284DB6C9BFEF88606695BBC11E150 /* ConstraintView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintView.swift; path = Source/ConstraintView.swift; sourceTree = "<group>"; };
 		7CAB1252291439F55A9C6B617FEFAA16 /* Pods-SZTableViewManagerExample-SZTableViewManagerExampleUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SZTableViewManagerExample-SZTableViewManagerExampleUITests.modulemap"; sourceTree = "<group>"; };
-		803846F9E0DAAC68E827F93B8318EB5F /* SZTableViewManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SZTableViewManager.swift; sourceTree = "<group>"; };
+		807F5279ECA1E77BEC4455F1645BF6D7 /* ConstraintRelatableTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintRelatableTarget.swift; path = Source/ConstraintRelatableTarget.swift; sourceTree = "<group>"; };
+		808F9992646F73DDF13B620076F2619D /* SZTitleCellItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SZTitleCellItem.swift; sourceTree = "<group>"; };
 		828536889863D3B3EB10C4FDCA6ACB4E /* Pods-SZTableViewManagerExample-SZTableViewManagerExampleUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SZTableViewManagerExample-SZTableViewManagerExampleUITests-Info.plist"; sourceTree = "<group>"; };
-		83D8CBB571917ECCE331C3316EDCA60C /* SZTableViewManager-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SZTableViewManager-Info.plist"; sourceTree = "<group>"; };
+		848E9BA38AE7A77B37C78B343E836974 /* SnapKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SnapKit-Info.plist"; sourceTree = "<group>"; };
 		8765C5B4889666A555951394FA34A146 /* Pods-SZTableViewManagerExampleTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SZTableViewManagerExampleTests.modulemap"; sourceTree = "<group>"; };
-		8DCC9E5B7D0E312B57E4BF1AF04B0A6C /* SZTableViewManager.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SZTableViewManager.release.xcconfig; sourceTree = "<group>"; };
-		8E8B1CA2F72304EF1F1E5F6B028DC86B /* ResourceBundle-SZTableViewManager-SZTableViewManager-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-SZTableViewManager-SZTableViewManager-Info.plist"; sourceTree = "<group>"; };
+		8C80000E1CA4369B2E82035A1825982D /* ConstraintRelation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintRelation.swift; path = Source/ConstraintRelation.swift; sourceTree = "<group>"; };
 		8EA22E1AF4239F53A4C9D10FA159A82D /* Pods-SZTableViewManagerExample-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SZTableViewManagerExample-Info.plist"; sourceTree = "<group>"; };
-		988F7A63CDA2FFA1225B2F45F9460168 /* SZTitleCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SZTitleCell.swift; sourceTree = "<group>"; };
+		8F2D0C7209EFA17EFECCB8074F0E9071 /* ConstraintAttributes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintAttributes.swift; path = Source/ConstraintAttributes.swift; sourceTree = "<group>"; };
+		909B45F39574E0AE6D9C2C9A4CD6B056 /* SZTableViewManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SZTableViewManager.swift; sourceTree = "<group>"; };
+		91102F716DCE9969F79474488AEA2BFD /* ConstraintOffsetTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintOffsetTarget.swift; path = Source/ConstraintOffsetTarget.swift; sourceTree = "<group>"; };
+		912A7391B7D8C662EEBD72655643801B /* SZTableViewManager-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SZTableViewManager-Info.plist"; sourceTree = "<group>"; };
+		979486118B3E90C08386079D57962701 /* SnapKit */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SnapKit; path = SnapKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B76846EE2CDCC2DD5F58878D49013EB /* Pods-SZTableViewManagerExample-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SZTableViewManagerExample-acknowledgements.plist"; sourceTree = "<group>"; };
 		9CA476B20DF8B6C7828500412078E4ED /* Pods-SZTableViewManagerExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SZTableViewManagerExample.debug.xcconfig"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9FBF72D8B8341EC8678E8D11CABE6F6B /* Pods-SZTableViewManagerExampleTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SZTableViewManagerExampleTests-acknowledgements.plist"; sourceTree = "<group>"; };
-		A2B447CF961C55D78303B38B41D49E30 /* SZTableViewManager-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SZTableViewManager-dummy.m"; sourceTree = "<group>"; };
-		A346B2030F6BEC9A15B8AE43233BDA89 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
-		A7F7C21B77B1A081147644F420245DB6 /* SZTableViewManager.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SZTableViewManager.debug.xcconfig; sourceTree = "<group>"; };
+		A3499D06B7741051669EFC6E6A929A57 /* ConstraintConfig.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintConfig.swift; path = Source/ConstraintConfig.swift; sourceTree = "<group>"; };
+		AB1B5C574EC29B2A222C6281A4A0B3BC /* SnapKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SnapKit-dummy.m"; sourceTree = "<group>"; };
+		AD6E9D9A9A36CAC6827C30D02B1B414B /* Constraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Constraint.swift; path = Source/Constraint.swift; sourceTree = "<group>"; };
 		B24A6F19F9E5E2D5A818B437D90E6628 /* Pods-SZTableViewManagerExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SZTableViewManagerExample.release.xcconfig"; sourceTree = "<group>"; };
 		B5CA71A4C32F02276A6B2D9F49D27E07 /* Pods-SZTableViewManagerExample-SZTableViewManagerExampleUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SZTableViewManagerExample-SZTableViewManagerExampleUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		B8BEF98EFE5AA5B53394A45BAC472945 /* SnapKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SnapKit.release.xcconfig; sourceTree = "<group>"; };
+		BAA070155DE459F51A650261C10EA9CB /* ConstraintDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintDSL.swift; path = Source/ConstraintDSL.swift; sourceTree = "<group>"; };
+		BC9F027F23F1073A48947E9F0E5B0371 /* SZTableViewDefines.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SZTableViewDefines.swift; sourceTree = "<group>"; };
 		C20154D7716EF5CB35741350A7144C3E /* Pods-SZTableViewManagerExampleTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SZTableViewManagerExampleTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		C89552C29B3090667057D8E56D2C3D81 /* ConstraintLayoutSupportDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutSupportDSL.swift; path = Source/ConstraintLayoutSupportDSL.swift; sourceTree = "<group>"; };
+		C8D6B4E640B3D09C454814F36856E2EE /* ConstraintLayoutSupport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutSupport.swift; path = Source/ConstraintLayoutSupport.swift; sourceTree = "<group>"; };
 		CA7D90EEC50E49BDA9B1CA72D4419F98 /* Pods-SZTableViewManagerExampleTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SZTableViewManagerExampleTests-umbrella.h"; sourceTree = "<group>"; };
-		CE35F799FF4EDE38ED2FF66BD2B50401 /* SZTableViewManager-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SZTableViewManager-umbrella.h"; sourceTree = "<group>"; };
+		CE09A870FAF0A87004ABF150D848AD73 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		CE9FDCDE0322733320DD5753C2ECB253 /* SZTableViewManager-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SZTableViewManager-dummy.m"; sourceTree = "<group>"; };
+		D00A7CC164A25FC17A2586DABF40B567 /* ReadMe.md */ = {isa = PBXFileReference; includeInIndex = 1; path = ReadMe.md; sourceTree = "<group>"; };
+		D0D8610217E033F12A628571FD3D1684 /* Typealiases.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Typealiases.swift; path = Source/Typealiases.swift; sourceTree = "<group>"; };
+		D3DD21F59E9ABB6CFA8B14FAEE0B52DA /* ConstraintMakerPriortizable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerPriortizable.swift; path = Source/ConstraintMakerPriortizable.swift; sourceTree = "<group>"; };
+		D70EE08D17FCF6DF16142941BC16E5E5 /* SZTableViewManager.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SZTableViewManager.debug.xcconfig; sourceTree = "<group>"; };
 		D86007863D2A1ED6DED538C30EA18360 /* Pods-SZTableViewManagerExample */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-SZTableViewManagerExample"; path = Pods_SZTableViewManagerExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E533050E7FDDDB24C2E8465744072D14 /* SZTableViewItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SZTableViewItem.swift; sourceTree = "<group>"; };
+		DA5597D051B6350A61151221E8BEE0D0 /* ConstraintInsetTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintInsetTarget.swift; path = Source/ConstraintInsetTarget.swift; sourceTree = "<group>"; };
+		DBB01221055BDABDD47999C671F4A9BD /* ConstraintItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintItem.swift; path = Source/ConstraintItem.swift; sourceTree = "<group>"; };
+		DD5FA9D02AB0655105048BA28B9E24C3 /* ResourceBundle-SZTableViewManager-SZTableViewManager-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-SZTableViewManager-SZTableViewManager-Info.plist"; sourceTree = "<group>"; };
+		DE7B17068C0166E541DAC7C4AAD194F5 /* SZTableViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SZTableViewCell.swift; sourceTree = "<group>"; };
+		E1F10AA484FE3CE9A074FF4CA855D1C7 /* ConstraintConstantTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintConstantTarget.swift; path = Source/ConstraintConstantTarget.swift; sourceTree = "<group>"; };
+		E2070246046EC94EF1396AC30E3FC5E8 /* SnapKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SnapKit.modulemap; sourceTree = "<group>"; };
 		E58AEAAB9C51AC989DC1FF0015EBCD24 /* Pods-SZTableViewManagerExampleTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SZTableViewManagerExampleTests-dummy.m"; sourceTree = "<group>"; };
-		E5E4F2612C745D48F82F2918C344928A /* SZTableViewManager.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = SZTableViewManager.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		E887F5BC85E664CAF1EAD58DB6EF027D /* ConstraintMakerRelatable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerRelatable.swift; path = Source/ConstraintMakerRelatable.swift; sourceTree = "<group>"; };
 		EADF256B2C089D3CC30F5D440B0E9631 /* SZTableViewManager-SZTableViewManager */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "SZTableViewManager-SZTableViewManager"; path = SZTableViewManager.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		F1B4AE2B258BA981FDA16C0725F0C84C /* SZTableViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SZTableViewCell.swift; sourceTree = "<group>"; };
-		F2806249ED3C98AC9205DD55F85A6C1B /* SZTableViewSection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SZTableViewSection.swift; sourceTree = "<group>"; };
+		EE7C40E01877B0E97F9C8C315E9B37C3 /* SZTableViewSection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SZTableViewSection.swift; sourceTree = "<group>"; };
 		F50C785AFD3DFB7C2A7ADEADD432CAC6 /* Pods-SZTableViewManagerExampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SZTableViewManagerExampleTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F5D6CC09B94B26342D8F81ABB86B6AD5 /* SZTableViewManager.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SZTableViewManager.modulemap; sourceTree = "<group>"; };
 		F96AEABFA0B7B45FE2A9BDA5F5FC5543 /* Pods-SZTableViewManagerExample-SZTableViewManagerExampleUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SZTableViewManagerExample-SZTableViewManagerExampleUITests-umbrella.h"; sourceTree = "<group>"; };
+		FB3146B382C3292E28917B8CF4356923 /* ConstraintMakerFinalizable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerFinalizable.swift; path = Source/ConstraintMakerFinalizable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		2B8B3E08360F18ABC710BD0D486D1D2D /* Frameworks */ = {
+		1A40D76A25224F55B8D53CA62DDF06C3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E23D1C4BF1AC815F35C35CF29ACF8A46 /* Foundation.framework in Frameworks */,
+				8E71E7A05B4469463B55DB720B699C60 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		593FB0D1A2A25A3EC9E420D437A45C04 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1EDC4C48B6BE33645DB882A48C8076D /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -130,18 +232,18 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7D785B6331EC87462D527FF9B831A072 /* Frameworks */ = {
+		6A806B4F553253B0EF2B40C556D92D5A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8C60CE6253D5306596B0AD32CBEA9549 /* Frameworks */ = {
+		C860AEEE7F703FB1B484D98F8674A034 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D2E6C2A2D8E4806EB4EDBE474B9F8B4E /* Foundation.framework in Frameworks */,
+				99BA19092DA09C3A52F275A0B367EC04 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -156,45 +258,44 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0328D4AD9A1E4B57875AA5C5F1ED2CE1 /* SZTableViewManager */ = {
+		03FF2D992CDE7F4E9BBBFBB1F75709D0 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				72CD398A66DAC4EE348BEE3F207E097B /* CellItems */,
-				97CEB6C131988449775BA1F1C4617631 /* Core */,
-				0C21BF0BCC75925C646106D67B837C9E /* Pod */,
-				D8390AA6FD5FE4D1D07FE5A58B28773B /* Support Files */,
+				133B3E6FC3FCA4301CCCFC4B05C85C9C /* SZTableViewManager */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		133B3E6FC3FCA4301CCCFC4B05C85C9C /* SZTableViewManager */ = {
+			isa = PBXGroup;
+			children = (
+				3C903C05EE1BE057D15228D0A9EDD16E /* CellItems */,
+				6FD912FDABA7B01FB79736A9A5919B79 /* Core */,
+				30CF8B78814865E250B83AFF400F3F9F /* Pod */,
+				DD9BE170E70C6AEB73D4E3A8A9AA18DD /* Support Files */,
 			);
 			name = SZTableViewManager;
 			path = ../..;
 			sourceTree = "<group>";
 		};
-		03FF2D992CDE7F4E9BBBFBB1F75709D0 /* Development Pods */ = {
+		30CF8B78814865E250B83AFF400F3F9F /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				0328D4AD9A1E4B57875AA5C5F1ED2CE1 /* SZTableViewManager */,
-			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
-		0C21BF0BCC75925C646106D67B837C9E /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				A346B2030F6BEC9A15B8AE43233BDA89 /* LICENSE */,
-				E5E4F2612C745D48F82F2918C344928A /* SZTableViewManager.podspec */,
+				CE09A870FAF0A87004ABF150D848AD73 /* LICENSE */,
+				D00A7CC164A25FC17A2586DABF40B567 /* ReadMe.md */,
+				61BF6319389D01D5F203E3604A94295D /* SZTableViewManager.podspec */,
 			);
 			name = Pod;
 			sourceTree = "<group>";
 		};
-		11031A5F2B1E99FC9502B25271F95B1F /* Products */ = {
+		3C903C05EE1BE057D15228D0A9EDD16E /* CellItems */ = {
 			isa = PBXGroup;
 			children = (
-				D86007863D2A1ED6DED538C30EA18360 /* Pods-SZTableViewManagerExample */,
-				0986842C7F8B3D4C8A6C97AE0BB276C7 /* Pods-SZTableViewManagerExample-SZTableViewManagerExampleUITests */,
-				6B32D2CE8F2DB38ACEF5D9EFFD489E2F /* Pods-SZTableViewManagerExampleTests */,
-				482D08C9E06C4C125DFD1AFA6677FCDE /* SZTableViewManager */,
-				EADF256B2C089D3CC30F5D440B0E9631 /* SZTableViewManager-SZTableViewManager */,
+				146B894D738FF88F79B7261CBE23EF93 /* SZTitleCell.swift */,
+				808F9992646F73DDF13B620076F2619D /* SZTitleCellItem.swift */,
 			);
-			name = Products;
+			name = CellItems;
+			path = SZTableViewManager/CellItems;
 			sourceTree = "<group>";
 		};
 		413E5EEFCB10878D1947C77D0D42B05F /* Pods-SZTableViewManagerExampleTests */ = {
@@ -211,6 +312,14 @@
 			);
 			name = "Pods-SZTableViewManagerExampleTests";
 			path = "Target Support Files/Pods-SZTableViewManagerExampleTests";
+			sourceTree = "<group>";
+		};
+		427B270BD76A5EF45313FBF29233B96D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CA51EB6A266DFF60E2669DC4F20AE5DD /* SnapKit */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		439E8BADCE465D29345CABEF85D4E5EA /* Pods-SZTableViewManagerExample */ = {
@@ -238,27 +347,73 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		72CD398A66DAC4EE348BEE3F207E097B /* CellItems */ = {
+		6FD912FDABA7B01FB79736A9A5919B79 /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				988F7A63CDA2FFA1225B2F45F9460168 /* SZTitleCell.swift */,
-				68CF02AFFD972A3B293C8DFBD5FE7202 /* SZTitleCellItem.swift */,
-			);
-			name = CellItems;
-			path = SZTableViewManager/CellItems;
-			sourceTree = "<group>";
-		};
-		97CEB6C131988449775BA1F1C4617631 /* Core */ = {
-			isa = PBXGroup;
-			children = (
-				F1B4AE2B258BA981FDA16C0725F0C84C /* SZTableViewCell.swift */,
-				1388CB0ADCE2CD329ADED065B967E39B /* SZTableViewDefines.swift */,
-				E533050E7FDDDB24C2E8465744072D14 /* SZTableViewItem.swift */,
-				803846F9E0DAAC68E827F93B8318EB5F /* SZTableViewManager.swift */,
-				F2806249ED3C98AC9205DD55F85A6C1B /* SZTableViewSection.swift */,
+				DE7B17068C0166E541DAC7C4AAD194F5 /* SZTableViewCell.swift */,
+				BC9F027F23F1073A48947E9F0E5B0371 /* SZTableViewDefines.swift */,
+				16FAC8044372906C246FAEC666AD3489 /* SZTableViewItem.swift */,
+				909B45F39574E0AE6D9C2C9A4CD6B056 /* SZTableViewManager.swift */,
+				EE7C40E01877B0E97F9C8C315E9B37C3 /* SZTableViewSection.swift */,
 			);
 			name = Core;
 			path = SZTableViewManager/Core;
+			sourceTree = "<group>";
+		};
+		B80F8C22EDB13089E3BBE0C4A5562A9E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D86007863D2A1ED6DED538C30EA18360 /* Pods-SZTableViewManagerExample */,
+				0986842C7F8B3D4C8A6C97AE0BB276C7 /* Pods-SZTableViewManagerExample-SZTableViewManagerExampleUITests */,
+				6B32D2CE8F2DB38ACEF5D9EFFD489E2F /* Pods-SZTableViewManagerExampleTests */,
+				979486118B3E90C08386079D57962701 /* SnapKit */,
+				482D08C9E06C4C125DFD1AFA6677FCDE /* SZTableViewManager */,
+				EADF256B2C089D3CC30F5D440B0E9631 /* SZTableViewManager-SZTableViewManager */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CA51EB6A266DFF60E2669DC4F20AE5DD /* SnapKit */ = {
+			isa = PBXGroup;
+			children = (
+				AD6E9D9A9A36CAC6827C30D02B1B414B /* Constraint.swift */,
+				8F2D0C7209EFA17EFECCB8074F0E9071 /* ConstraintAttributes.swift */,
+				A3499D06B7741051669EFC6E6A929A57 /* ConstraintConfig.swift */,
+				E1F10AA484FE3CE9A074FF4CA855D1C7 /* ConstraintConstantTarget.swift */,
+				6CACD95C459F4D08F9C1E57893F55090 /* ConstraintDescription.swift */,
+				BAA070155DE459F51A650261C10EA9CB /* ConstraintDSL.swift */,
+				1C81B0C23EADA502AA9895105ACF93AD /* ConstraintInsets.swift */,
+				DA5597D051B6350A61151221E8BEE0D0 /* ConstraintInsetTarget.swift */,
+				DBB01221055BDABDD47999C671F4A9BD /* ConstraintItem.swift */,
+				460FE348E93FFA86EF28B0DE4C0F4A7D /* ConstraintLayoutGuide.swift */,
+				4230A725EDA6C25944C70BFF90CCC3F4 /* ConstraintLayoutGuide+Extensions.swift */,
+				7413D1E3B3849A8B98CECBCB1E3EA510 /* ConstraintLayoutGuideDSL.swift */,
+				C8D6B4E640B3D09C454814F36856E2EE /* ConstraintLayoutSupport.swift */,
+				C89552C29B3090667057D8E56D2C3D81 /* ConstraintLayoutSupportDSL.swift */,
+				46F8B378A0D395518DE2DD11AE4B6F98 /* ConstraintMaker.swift */,
+				766CC484A3E4DD46665D9EF06679B007 /* ConstraintMakerEditable.swift */,
+				7478F64EB1BC7B207D2133307B4B5015 /* ConstraintMakerExtendable.swift */,
+				FB3146B382C3292E28917B8CF4356923 /* ConstraintMakerFinalizable.swift */,
+				D3DD21F59E9ABB6CFA8B14FAEE0B52DA /* ConstraintMakerPriortizable.swift */,
+				E887F5BC85E664CAF1EAD58DB6EF027D /* ConstraintMakerRelatable.swift */,
+				51566D0AF41FEBB1DD1BB7CA86B07225 /* ConstraintMultiplierTarget.swift */,
+				91102F716DCE9969F79474488AEA2BFD /* ConstraintOffsetTarget.swift */,
+				37F1A25F3C9883F6A0A4428D8AFC44B2 /* ConstraintPriority.swift */,
+				6199B0E33536DD7E23A71C2A1DFA3CB3 /* ConstraintPriorityTarget.swift */,
+				807F5279ECA1E77BEC4455F1645BF6D7 /* ConstraintRelatableTarget.swift */,
+				8C80000E1CA4369B2E82035A1825982D /* ConstraintRelation.swift */,
+				7A3284DB6C9BFEF88606695BBC11E150 /* ConstraintView.swift */,
+				5975457FA577D667D0257900DF1D4FDD /* ConstraintView+Extensions.swift */,
+				09C2F3330EB4A39DC3B20B40D8981F66 /* ConstraintViewDSL.swift */,
+				00BB2CE9C8C7607CDA3E1B49246B760E /* Debugging.swift */,
+				103B8B35502B427E3F46D5237C681DCB /* LayoutConstraint.swift */,
+				00EFECCF7F4E78B3021A97741173FC2F /* LayoutConstraintItem.swift */,
+				D0D8610217E033F12A628571FD3D1684 /* Typealiases.swift */,
+				4DCD15E7A2AFE53263B4335C9B3D9813 /* UILayoutSupport+Extensions.swift */,
+				D28E246011041898C1EA6C3AAF01971C /* Support Files */,
+			);
+			name = SnapKit;
+			path = SnapKit;
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
@@ -267,7 +422,8 @@
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				03FF2D992CDE7F4E9BBBFBB1F75709D0 /* Development Pods */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				11031A5F2B1E99FC9502B25271F95B1F /* Products */,
+				427B270BD76A5EF45313FBF29233B96D /* Pods */,
+				B80F8C22EDB13089E3BBE0C4A5562A9E /* Products */,
 				E1AC1828ABF82820D4FA435E47F5DEE3 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
@@ -280,17 +436,32 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		D8390AA6FD5FE4D1D07FE5A58B28773B /* Support Files */ = {
+		D28E246011041898C1EA6C3AAF01971C /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				8E8B1CA2F72304EF1F1E5F6B028DC86B /* ResourceBundle-SZTableViewManager-SZTableViewManager-Info.plist */,
-				24E5A5976EFEB24CC112BEFB7C2F5B73 /* SZTableViewManager.modulemap */,
-				A2B447CF961C55D78303B38B41D49E30 /* SZTableViewManager-dummy.m */,
-				83D8CBB571917ECCE331C3316EDCA60C /* SZTableViewManager-Info.plist */,
-				0E358876A0922A3F9A8F2AA3578BDEC9 /* SZTableViewManager-prefix.pch */,
-				CE35F799FF4EDE38ED2FF66BD2B50401 /* SZTableViewManager-umbrella.h */,
-				A7F7C21B77B1A081147644F420245DB6 /* SZTableViewManager.debug.xcconfig */,
-				8DCC9E5B7D0E312B57E4BF1AF04B0A6C /* SZTableViewManager.release.xcconfig */,
+				E2070246046EC94EF1396AC30E3FC5E8 /* SnapKit.modulemap */,
+				AB1B5C574EC29B2A222C6281A4A0B3BC /* SnapKit-dummy.m */,
+				848E9BA38AE7A77B37C78B343E836974 /* SnapKit-Info.plist */,
+				3B569D02FFB2C8143A71D4511C970AC4 /* SnapKit-prefix.pch */,
+				42EDC7C7A525E5D5191CA0B7A731184D /* SnapKit-umbrella.h */,
+				29693EC049D6AC1AE94A7B743D01A9AB /* SnapKit.debug.xcconfig */,
+				B8BEF98EFE5AA5B53394A45BAC472945 /* SnapKit.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SnapKit";
+			sourceTree = "<group>";
+		};
+		DD9BE170E70C6AEB73D4E3A8A9AA18DD /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				DD5FA9D02AB0655105048BA28B9E24C3 /* ResourceBundle-SZTableViewManager-SZTableViewManager-Info.plist */,
+				F5D6CC09B94B26342D8F81ABB86B6AD5 /* SZTableViewManager.modulemap */,
+				CE9FDCDE0322733320DD5753C2ECB253 /* SZTableViewManager-dummy.m */,
+				912A7391B7D8C662EEBD72655643801B /* SZTableViewManager-Info.plist */,
+				383224F60A6F64BC8D0D473A6EE1729F /* SZTableViewManager-prefix.pch */,
+				5308DECC7E060D0E2FA2AD60B1FB5B24 /* SZTableViewManager-umbrella.h */,
+				D70EE08D17FCF6DF16142941BC16E5E5 /* SZTableViewManager.debug.xcconfig */,
+				51832E37ED09A3221A62CC9719BB8E6A /* SZTableViewManager.release.xcconfig */,
 			);
 			name = "Support Files";
 			path = "SZTableViewManagerExample/Pods/Target Support Files/SZTableViewManager";
@@ -334,19 +505,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		595F150A45488C2B16C625042609849D /* Headers */ = {
+		4AAB8D590DCA375F8EF879C102D2594F /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3CBA143AEF8610F4D6405B85F275E847 /* Pods-SZTableViewManagerExample-SZTableViewManagerExampleUITests-umbrella.h in Headers */,
+				FEFB02437E8DA1AD8CE7713F92969987 /* Pods-SZTableViewManagerExample-SZTableViewManagerExampleUITests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DA012A298F35FD4C40D82980AC961810 /* Headers */ = {
+		6D069BB57561178046B8D28B51C73CA0 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4D7C937B0DD47ACFC34C083C318F4E2F /* Pods-SZTableViewManagerExample-umbrella.h in Headers */,
+				BBF7B32FB70AEDE982CDA068ED3578BA /* SnapKit-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		744A3199784D1DB4D1DCD773D850EC9D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				378114D32B118CCD3A3049B7A061AAF9 /* Pods-SZTableViewManagerExample-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -363,21 +542,40 @@
 /* Begin PBXNativeTarget section */
 		12B865A60F7BD7C28890020B6C2B9645 /* Pods-SZTableViewManagerExample */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 14DD67F0143FB268F257D3F596F985DF /* Build configuration list for PBXNativeTarget "Pods-SZTableViewManagerExample" */;
+			buildConfigurationList = EA25242C32FADA9127623DEA8CCDC8C7 /* Build configuration list for PBXNativeTarget "Pods-SZTableViewManagerExample" */;
 			buildPhases = (
-				DA012A298F35FD4C40D82980AC961810 /* Headers */,
-				9D7F8CE73E61524F676E5E9AB57A1C8C /* Sources */,
-				8C60CE6253D5306596B0AD32CBEA9549 /* Frameworks */,
-				1B3C8E347536052B4C18DEB0EB61DC9D /* Resources */,
+				744A3199784D1DB4D1DCD773D850EC9D /* Headers */,
+				522818B34CD7A5FFFEAE3813EB95DB32 /* Sources */,
+				1A40D76A25224F55B8D53CA62DDF06C3 /* Frameworks */,
+				99EA46FD50D3314BCE04D51B6AB14D58 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				781F4F6FCEF80F7DEA9BB293488A4323 /* PBXTargetDependency */,
+				8E274C0F635C23D4613303843E73B323 /* PBXTargetDependency */,
+				0E28D61B4569433847BAF0B5D685AC23 /* PBXTargetDependency */,
 			);
 			name = "Pods-SZTableViewManagerExample";
 			productName = Pods_SZTableViewManagerExample;
 			productReference = D86007863D2A1ED6DED538C30EA18360 /* Pods-SZTableViewManagerExample */;
+			productType = "com.apple.product-type.framework";
+		};
+		19622742EBA51E823D6DAE3F8CDBFAD4 /* SnapKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E8978D78C4072A8F0B2F4C01F25013D4 /* Build configuration list for PBXNativeTarget "SnapKit" */;
+			buildPhases = (
+				6D069BB57561178046B8D28B51C73CA0 /* Headers */,
+				99EC9EF8EF24A920FBFCB9CA0E21EEF2 /* Sources */,
+				C860AEEE7F703FB1B484D98F8674A034 /* Frameworks */,
+				02BE36EEA3D0C8A5BF07897A17360D12 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SnapKit;
+			productName = SnapKit;
+			productReference = 979486118B3E90C08386079D57962701 /* SnapKit */;
 			productType = "com.apple.product-type.framework";
 		};
 		373EE2598E35D5398EDD11691B5A7350 /* Pods-SZTableViewManagerExampleTests */ = {
@@ -392,7 +590,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				A15A276C07390DDAA36C19AB0579030E /* PBXTargetDependency */,
+				9C130BE5EEE101850C8302145A210B88 /* PBXTargetDependency */,
 			);
 			name = "Pods-SZTableViewManagerExampleTests";
 			productName = Pods_SZTableViewManagerExampleTests;
@@ -411,7 +609,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				FEA523C77C5192C89D7B2F50DBA3311D /* PBXTargetDependency */,
+				C7C30F1960654D25E27871FD769ADCFA /* PBXTargetDependency */,
 			);
 			name = SZTableViewManager;
 			productName = SZTableViewManager;
@@ -420,17 +618,18 @@
 		};
 		764D06D3DF27634A7FCA20E6AE915B21 /* Pods-SZTableViewManagerExample-SZTableViewManagerExampleUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F8B86FB303FD137ECE6CC9F8160BFD3B /* Build configuration list for PBXNativeTarget "Pods-SZTableViewManagerExample-SZTableViewManagerExampleUITests" */;
+			buildConfigurationList = 0AEF9BC638538417C4B5B0E1E6A04217 /* Build configuration list for PBXNativeTarget "Pods-SZTableViewManagerExample-SZTableViewManagerExampleUITests" */;
 			buildPhases = (
-				595F150A45488C2B16C625042609849D /* Headers */,
-				5DBBEDCF276553B374E5FBC37A5460DE /* Sources */,
-				2B8B3E08360F18ABC710BD0D486D1D2D /* Frameworks */,
-				57646CB2F11D731781C0521105C629A6 /* Resources */,
+				4AAB8D590DCA375F8EF879C102D2594F /* Headers */,
+				24BD2C97EA55E29FFCC1F3447FAD8290 /* Sources */,
+				593FB0D1A2A25A3EC9E420D437A45C04 /* Frameworks */,
+				1B4315D2A2E6C2CC44EB19984BFB93D7 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				F30831B1395DC2B44D73555B5DEF6E2C /* PBXTargetDependency */,
+				74739A96F4C8B5180AD74A689D8FE714 /* PBXTargetDependency */,
+				BF4EDFBC7E05CFEB8A6F62A408E5DC53 /* PBXTargetDependency */,
 			);
 			name = "Pods-SZTableViewManagerExample-SZTableViewManagerExampleUITests";
 			productName = Pods_SZTableViewManagerExample_SZTableViewManagerExampleUITests;
@@ -439,11 +638,11 @@
 		};
 		D2630AC885730A6C53805D1EDEFCA85C /* SZTableViewManager-SZTableViewManager */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5EC1497FFCA79963F52F1F5A8E4BA5BF /* Build configuration list for PBXNativeTarget "SZTableViewManager-SZTableViewManager" */;
+			buildConfigurationList = 1730B1B5DC1F6B202893C22FB7BF76A9 /* Build configuration list for PBXNativeTarget "SZTableViewManager-SZTableViewManager" */;
 			buildPhases = (
-				1F231B221ACF68CAF2A3A256D1A0406D /* Sources */,
-				7D785B6331EC87462D527FF9B831A072 /* Frameworks */,
-				C270D3E9D159579BBA2B2E806D550149 /* Resources */,
+				ACE3D6DE5C53255C73E8B46055632DA5 /* Sources */,
+				6A806B4F553253B0EF2B40C556D92D5A /* Frameworks */,
+				7DAE8D89B877338AA722FDE24E55B196 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -472,13 +671,14 @@
 				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = 11031A5F2B1E99FC9502B25271F95B1F /* Products */;
+			productRefGroup = B80F8C22EDB13089E3BBE0C4A5562A9E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				12B865A60F7BD7C28890020B6C2B9645 /* Pods-SZTableViewManagerExample */,
 				764D06D3DF27634A7FCA20E6AE915B21 /* Pods-SZTableViewManagerExample-SZTableViewManagerExampleUITests */,
 				373EE2598E35D5398EDD11691B5A7350 /* Pods-SZTableViewManagerExampleTests */,
+				19622742EBA51E823D6DAE3F8CDBFAD4 /* SnapKit */,
 				491850F6F0BD30ACACFB4C7E7EE0F3EB /* SZTableViewManager */,
 				D2630AC885730A6C53805D1EDEFCA85C /* SZTableViewManager-SZTableViewManager */,
 			);
@@ -486,14 +686,14 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		1B3C8E347536052B4C18DEB0EB61DC9D /* Resources */ = {
+		02BE36EEA3D0C8A5BF07897A17360D12 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		57646CB2F11D731781C0521105C629A6 /* Resources */ = {
+		1B4315D2A2E6C2CC44EB19984BFB93D7 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -507,7 +707,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C270D3E9D159579BBA2B2E806D550149 /* Resources */ = {
+		7DAE8D89B877338AA722FDE24E55B196 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99EA46FD50D3314BCE04D51B6AB14D58 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -540,10 +747,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1F231B221ACF68CAF2A3A256D1A0406D /* Sources */ = {
+		24BD2C97EA55E29FFCC1F3447FAD8290 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAF1E353B2BFBCF9E8C5DF3651A517D1 /* Pods-SZTableViewManagerExample-SZTableViewManagerExampleUITests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -555,264 +763,106 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5DBBEDCF276553B374E5FBC37A5460DE /* Sources */ = {
+		522818B34CD7A5FFFEAE3813EB95DB32 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FCB1E1F3E65E37C8832D19FA54FE0C36 /* Pods-SZTableViewManagerExample-SZTableViewManagerExampleUITests-dummy.m in Sources */,
+				B603DB110705BA3AB021967E65955F14 /* Pods-SZTableViewManagerExample-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9D7F8CE73E61524F676E5E9AB57A1C8C /* Sources */ = {
+		99EC9EF8EF24A920FBFCB9CA0E21EEF2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				104A680219BABA5575F2CAF3758FE79C /* Pods-SZTableViewManagerExample-dummy.m in Sources */,
+				9825456B68AAF3CD9F1137377D738A9D /* Constraint.swift in Sources */,
+				F7ADF88139C23B1186F5784FA590E92C /* ConstraintAttributes.swift in Sources */,
+				1422F4D1C7597A7641CB3B433295AE1C /* ConstraintConfig.swift in Sources */,
+				35FB78B2F8BD0E0A1F1DAB88DD5F6525 /* ConstraintConstantTarget.swift in Sources */,
+				3AD3BE671BD40FE62762F7D9E49E6CE9 /* ConstraintDescription.swift in Sources */,
+				DC4424F1C3EDE2DFD10159ED87048E99 /* ConstraintDSL.swift in Sources */,
+				45940CC7CB8561893AE9F47E2EFDE986 /* ConstraintInsets.swift in Sources */,
+				717D0C947E8F27CAB5675FCF0D200DB9 /* ConstraintInsetTarget.swift in Sources */,
+				B197B2B88A4E00F5611E5C3B0BC0EC52 /* ConstraintItem.swift in Sources */,
+				36E3317EDE9829C3622AE63D3B5D0D1D /* ConstraintLayoutGuide.swift in Sources */,
+				8F488574ECEADDC9413AE8903A76AFDA /* ConstraintLayoutGuide+Extensions.swift in Sources */,
+				46914E49E8B39F271CD11F5FB30FD166 /* ConstraintLayoutGuideDSL.swift in Sources */,
+				441B24D9189D26152CC0DA97B741E833 /* ConstraintLayoutSupport.swift in Sources */,
+				A8D62FB2DCD20114129953F7A01F74B4 /* ConstraintLayoutSupportDSL.swift in Sources */,
+				468C7838D0806615EB279CFE359B9E7C /* ConstraintMaker.swift in Sources */,
+				19464E5871366D267456CAAF81B2E2D6 /* ConstraintMakerEditable.swift in Sources */,
+				07C2A8D8E0CC8EAB5F37E03332631748 /* ConstraintMakerExtendable.swift in Sources */,
+				6FCEC1D82466A0640C067970C142D6FC /* ConstraintMakerFinalizable.swift in Sources */,
+				F64213220213FD9F6AEB344C7541869A /* ConstraintMakerPriortizable.swift in Sources */,
+				D78F6A95A088F7E619745556DAFE9E0A /* ConstraintMakerRelatable.swift in Sources */,
+				31CB0E17706E0922E4E694012195751C /* ConstraintMultiplierTarget.swift in Sources */,
+				7CFE8C5EF5C3EAB15FF1C4B24052875F /* ConstraintOffsetTarget.swift in Sources */,
+				94FE297EF5474933073D62936D9A7224 /* ConstraintPriority.swift in Sources */,
+				F74B5978371D6E071955B81535B7BFEE /* ConstraintPriorityTarget.swift in Sources */,
+				24AED108806F65EA9BBEED416751D5FF /* ConstraintRelatableTarget.swift in Sources */,
+				B6600A7FA07908F5CBC4E5D90331AA53 /* ConstraintRelation.swift in Sources */,
+				FED883FB451220BEC4417EA345BE612F /* ConstraintView.swift in Sources */,
+				9AD08B51D408D58639348CC577DD988B /* ConstraintView+Extensions.swift in Sources */,
+				7A7E4189DEE2CD9B82CFBEA1C949BE15 /* ConstraintViewDSL.swift in Sources */,
+				525E445D6A1EF6B67EF4D0455FC5AAFA /* Debugging.swift in Sources */,
+				72744A9122CF44B2DEE0151B85CAB0CC /* LayoutConstraint.swift in Sources */,
+				0796336CEFF601AE1247F220908D6122 /* LayoutConstraintItem.swift in Sources */,
+				187AEAEFABA30C23783DE0BA67CDB53F /* SnapKit-dummy.m in Sources */,
+				9C0A3ED1F524AA4C4147169AD20D9078 /* Typealiases.swift in Sources */,
+				16D24E170C5A4E3991F9C378259C9E43 /* UILayoutSupport+Extensions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACE3D6DE5C53255C73E8B46055632DA5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		781F4F6FCEF80F7DEA9BB293488A4323 /* PBXTargetDependency */ = {
+		0E28D61B4569433847BAF0B5D685AC23 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SnapKit;
+			target = 19622742EBA51E823D6DAE3F8CDBFAD4 /* SnapKit */;
+			targetProxy = BFD8660599D5F23D15AE92BDA85E74F0 /* PBXContainerItemProxy */;
+		};
+		74739A96F4C8B5180AD74A689D8FE714 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SZTableViewManager;
 			target = 491850F6F0BD30ACACFB4C7E7EE0F3EB /* SZTableViewManager */;
-			targetProxy = 244257332FE1B852F8CB5FC124CE6164 /* PBXContainerItemProxy */;
+			targetProxy = 3332BC1F12E17A96E2425A984399BDF4 /* PBXContainerItemProxy */;
 		};
-		A15A276C07390DDAA36C19AB0579030E /* PBXTargetDependency */ = {
+		8E274C0F635C23D4613303843E73B323 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SZTableViewManager;
+			target = 491850F6F0BD30ACACFB4C7E7EE0F3EB /* SZTableViewManager */;
+			targetProxy = 63566F91E6C8F418D74EE88144652DDC /* PBXContainerItemProxy */;
+		};
+		9C130BE5EEE101850C8302145A210B88 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-SZTableViewManagerExample";
 			target = 12B865A60F7BD7C28890020B6C2B9645 /* Pods-SZTableViewManagerExample */;
-			targetProxy = FCC8B66247DA08CECCBB42B103615D3C /* PBXContainerItemProxy */;
+			targetProxy = 2157E797B384EB8002AF6C39D750FCF7 /* PBXContainerItemProxy */;
 		};
-		F30831B1395DC2B44D73555B5DEF6E2C /* PBXTargetDependency */ = {
+		BF4EDFBC7E05CFEB8A6F62A408E5DC53 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = SZTableViewManager;
-			target = 491850F6F0BD30ACACFB4C7E7EE0F3EB /* SZTableViewManager */;
-			targetProxy = 104302BD6C688232A7BDF1051A5FEA48 /* PBXContainerItemProxy */;
+			name = SnapKit;
+			target = 19622742EBA51E823D6DAE3F8CDBFAD4 /* SnapKit */;
+			targetProxy = D838D01B0689E60959EA345D50FE4A21 /* PBXContainerItemProxy */;
 		};
-		FEA523C77C5192C89D7B2F50DBA3311D /* PBXTargetDependency */ = {
+		C7C30F1960654D25E27871FD769ADCFA /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "SZTableViewManager-SZTableViewManager";
 			target = D2630AC885730A6C53805D1EDEFCA85C /* SZTableViewManager-SZTableViewManager */;
-			targetProxy = 3AA31AA258F566F30D53014FC39B9C3D /* PBXContainerItemProxy */;
+			targetProxy = 28BAD8736697E05031D872593DFF2FB7 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		0660951632F7A20732D6A8D353B2504A /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B24A6F19F9E5E2D5A818B437D90E6628 /* Pods-SZTableViewManagerExample.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-SZTableViewManagerExample/Pods-SZTableViewManagerExample-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-SZTableViewManagerExample/Pods-SZTableViewManagerExample.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		1860E5A0DD59D384F692D318E0AE1502 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A7F7C21B77B1A081147644F420245DB6 /* SZTableViewManager.debug.xcconfig */;
-			buildSettings = {
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/SZTableViewManager";
-				IBSC_MODULE = SZTableViewManager;
-				INFOPLIST_FILE = "Target Support Files/SZTableViewManager/ResourceBundle-SZTableViewManager-SZTableViewManager-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				PRODUCT_NAME = SZTableViewManager;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Debug;
-		};
-		2347ED42823AE1656DCF63C4A6417DDC /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8DCC9E5B7D0E312B57E4BF1AF04B0A6C /* SZTableViewManager.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/SZTableViewManager/SZTableViewManager-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SZTableViewManager/SZTableViewManager-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/SZTableViewManager/SZTableViewManager.modulemap";
-				PRODUCT_MODULE_NAME = SZTableViewManager;
-				PRODUCT_NAME = SZTableViewManager;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		23D6A8581922E49A26546FF243705FB5 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 01EA12BDE933AA80291ED075AD5484AC /* Pods-SZTableViewManagerExample-SZTableViewManagerExampleUITests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-SZTableViewManagerExample-SZTableViewManagerExampleUITests/Pods-SZTableViewManagerExample-SZTableViewManagerExampleUITests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-SZTableViewManagerExample-SZTableViewManagerExampleUITests/Pods-SZTableViewManagerExample-SZTableViewManagerExampleUITests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		250CC04C77C0748EC4E6C322C2A20498 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A7F7C21B77B1A081147644F420245DB6 /* SZTableViewManager.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/SZTableViewManager/SZTableViewManager-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SZTableViewManager/SZTableViewManager-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/SZTableViewManager/SZTableViewManager.modulemap";
-				PRODUCT_MODULE_NAME = SZTableViewManager;
-				PRODUCT_NAME = SZTableViewManager;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		36C53635AC25C4D76C323D99AB4F0B89 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9CA476B20DF8B6C7828500412078E4ED /* Pods-SZTableViewManagerExample.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-SZTableViewManagerExample/Pods-SZTableViewManagerExample-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-SZTableViewManagerExample/Pods-SZTableViewManagerExample.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		6CAFD11FE033CED2034C8AB662ECA03E /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8DCC9E5B7D0E312B57E4BF1AF04B0A6C /* SZTableViewManager.release.xcconfig */;
-			buildSettings = {
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/SZTableViewManager";
-				IBSC_MODULE = SZTableViewManager;
-				INFOPLIST_FILE = "Target Support Files/SZTableViewManager/ResourceBundle-SZTableViewManager-SZTableViewManager-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				PRODUCT_NAME = SZTableViewManager;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Release;
-		};
-		6D86D9D38681AD2D5C4DFE72A275A6FD /* Release */ = {
+		06BA4937043DB7F720C850EAE22E584D /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4650B59B4ED752B8A58FB30F452AAC40 /* Pods-SZTableViewManagerExampleTests.release.xcconfig */;
 			buildSettings = {
@@ -827,7 +877,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-SZTableViewManagerExampleTests/Pods-SZTableViewManagerExampleTests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -849,7 +899,421 @@
 			};
 			name = Release;
 		};
-		C352469741B3A74ED19BE4F809ED9D7A /* Debug */ = {
+		0B84B5AE77CDCD86E44269E471764374 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9CA476B20DF8B6C7828500412078E4ED /* Pods-SZTableViewManagerExample.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-SZTableViewManagerExample/Pods-SZTableViewManagerExample-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SZTableViewManagerExample/Pods-SZTableViewManagerExample.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		1F17AF91323E60F53D31B80F18DF4159 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 01EA12BDE933AA80291ED075AD5484AC /* Pods-SZTableViewManagerExample-SZTableViewManagerExampleUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-SZTableViewManagerExample-SZTableViewManagerExampleUITests/Pods-SZTableViewManagerExample-SZTableViewManagerExampleUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SZTableViewManagerExample-SZTableViewManagerExampleUITests/Pods-SZTableViewManagerExample-SZTableViewManagerExampleUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		2347ED42823AE1656DCF63C4A6417DDC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 51832E37ED09A3221A62CC9719BB8E6A /* SZTableViewManager.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SZTableViewManager/SZTableViewManager-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SZTableViewManager/SZTableViewManager-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SZTableViewManager/SZTableViewManager.modulemap";
+				PRODUCT_MODULE_NAME = SZTableViewManager;
+				PRODUCT_NAME = SZTableViewManager;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		250CC04C77C0748EC4E6C322C2A20498 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D70EE08D17FCF6DF16142941BC16E5E5 /* SZTableViewManager.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SZTableViewManager/SZTableViewManager-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SZTableViewManager/SZTableViewManager-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SZTableViewManager/SZTableViewManager.modulemap";
+				PRODUCT_MODULE_NAME = SZTableViewManager;
+				PRODUCT_NAME = SZTableViewManager;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		27B38535CD3957EB405AA769A4743088 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B8BEF98EFE5AA5B53394A45BAC472945 /* SnapKit.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SnapKit/SnapKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SnapKit/SnapKit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SnapKit/SnapKit.modulemap";
+				PRODUCT_MODULE_NAME = SnapKit;
+				PRODUCT_NAME = SnapKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		474D7E1DC67D9215F9B259AF94364E81 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 318178045D53633A58E8A4E1361A367F /* Pods-SZTableViewManagerExample-SZTableViewManagerExampleUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-SZTableViewManagerExample-SZTableViewManagerExampleUITests/Pods-SZTableViewManagerExample-SZTableViewManagerExampleUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SZTableViewManagerExample-SZTableViewManagerExampleUITests/Pods-SZTableViewManagerExample-SZTableViewManagerExampleUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6D42DC62C4F2E194221DF89C48496C98 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		9AA703F13CBEBDD8312F7AF4B0D7CE35 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D70EE08D17FCF6DF16142941BC16E5E5 /* SZTableViewManager.debug.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/SZTableViewManager";
+				IBSC_MODULE = SZTableViewManager;
+				INFOPLIST_FILE = "Target Support Files/SZTableViewManager/ResourceBundle-SZTableViewManager-SZTableViewManager-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = SZTableViewManager;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		B699C5958104D0D7B3D3CDB06C21CBB4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 51832E37ED09A3221A62CC9719BB8E6A /* SZTableViewManager.release.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/SZTableViewManager";
+				IBSC_MODULE = SZTableViewManager;
+				INFOPLIST_FILE = "Target Support Files/SZTableViewManager/ResourceBundle-SZTableViewManager-SZTableViewManager-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = SZTableViewManager;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		BB635824C4847C068A804FED61665439 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F50C785AFD3DFB7C2A7ADEADD432CAC6 /* Pods-SZTableViewManagerExampleTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-SZTableViewManagerExampleTests/Pods-SZTableViewManagerExampleTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SZTableViewManagerExampleTests/Pods-SZTableViewManagerExampleTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C590F1BC10C391EEA72F2B535ECEE3F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B24A6F19F9E5E2D5A818B437D90E6628 /* Pods-SZTableViewManagerExample.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-SZTableViewManagerExample/Pods-SZTableViewManagerExample-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SZTableViewManagerExample/Pods-SZTableViewManagerExample.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		DFA126C1F44C3FDA2FCB9DE914D780A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 29693EC049D6AC1AE94A7B743D01A9AB /* SnapKit.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SnapKit/SnapKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SnapKit/SnapKit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SnapKit/SnapKit.modulemap";
+				PRODUCT_MODULE_NAME = SnapKit;
+				PRODUCT_NAME = SnapKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E4D0D44B090D4284607EBBC4E71A96C1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -902,7 +1366,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -915,157 +1379,32 @@
 			};
 			name = Debug;
 		};
-		C412AA33EAEA03CD7DE4641BECE9C0E0 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 318178045D53633A58E8A4E1361A367F /* Pods-SZTableViewManagerExample-SZTableViewManagerExampleUITests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-SZTableViewManagerExample-SZTableViewManagerExampleUITests/Pods-SZTableViewManagerExample-SZTableViewManagerExampleUITests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-SZTableViewManagerExample-SZTableViewManagerExampleUITests/Pods-SZTableViewManagerExample-SZTableViewManagerExampleUITests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		C6D1E952EF911DB3F103BAC097634E5C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F50C785AFD3DFB7C2A7ADEADD432CAC6 /* Pods-SZTableViewManagerExampleTests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-SZTableViewManagerExampleTests/Pods-SZTableViewManagerExampleTests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-SZTableViewManagerExampleTests/Pods-SZTableViewManagerExampleTests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		F26A457E3AE997331A7B7AA0E1DF884C /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"POD_CONFIGURATION_RELEASE=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				MTL_FAST_MATH = YES;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				SWIFT_VERSION = 5.0;
-				SYMROOT = "${SRCROOT}/../build";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
 		00706895E49F13D0445B03153301CB9C /* Build configuration list for PBXNativeTarget "Pods-SZTableViewManagerExampleTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C6D1E952EF911DB3F103BAC097634E5C /* Debug */,
-				6D86D9D38681AD2D5C4DFE72A275A6FD /* Release */,
+				BB635824C4847C068A804FED61665439 /* Debug */,
+				06BA4937043DB7F720C850EAE22E584D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		14DD67F0143FB268F257D3F596F985DF /* Build configuration list for PBXNativeTarget "Pods-SZTableViewManagerExample" */ = {
+		0AEF9BC638538417C4B5B0E1E6A04217 /* Build configuration list for PBXNativeTarget "Pods-SZTableViewManagerExample-SZTableViewManagerExampleUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				36C53635AC25C4D76C323D99AB4F0B89 /* Debug */,
-				0660951632F7A20732D6A8D353B2504A /* Release */,
+				474D7E1DC67D9215F9B259AF94364E81 /* Debug */,
+				1F17AF91323E60F53D31B80F18DF4159 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1730B1B5DC1F6B202893C22FB7BF76A9 /* Build configuration list for PBXNativeTarget "SZTableViewManager-SZTableViewManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9AA703F13CBEBDD8312F7AF4B0D7CE35 /* Debug */,
+				B699C5958104D0D7B3D3CDB06C21CBB4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1073,17 +1412,26 @@
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C352469741B3A74ED19BE4F809ED9D7A /* Debug */,
-				F26A457E3AE997331A7B7AA0E1DF884C /* Release */,
+				E4D0D44B090D4284607EBBC4E71A96C1 /* Debug */,
+				6D42DC62C4F2E194221DF89C48496C98 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5EC1497FFCA79963F52F1F5A8E4BA5BF /* Build configuration list for PBXNativeTarget "SZTableViewManager-SZTableViewManager" */ = {
+		E8978D78C4072A8F0B2F4C01F25013D4 /* Build configuration list for PBXNativeTarget "SnapKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1860E5A0DD59D384F692D318E0AE1502 /* Debug */,
-				6CAFD11FE033CED2034C8AB662ECA03E /* Release */,
+				DFA126C1F44C3FDA2FCB9DE914D780A2 /* Debug */,
+				27B38535CD3957EB405AA769A4743088 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EA25242C32FADA9127623DEA8CCDC8C7 /* Build configuration list for PBXNativeTarget "Pods-SZTableViewManagerExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0B84B5AE77CDCD86E44269E471764374 /* Debug */,
+				C590F1BC10C391EEA72F2B535ECEE3F7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1093,15 +1441,6 @@
 			buildConfigurations = (
 				250CC04C77C0748EC4E6C322C2A20498 /* Debug */,
 				2347ED42823AE1656DCF63C4A6417DDC /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		F8B86FB303FD137ECE6CC9F8160BFD3B /* Build configuration list for PBXNativeTarget "Pods-SZTableViewManagerExample-SZTableViewManagerExampleUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				C412AA33EAEA03CD7DE4641BECE9C0E0 /* Debug */,
-				23D6A8581922E49A26546FF243705FB5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
