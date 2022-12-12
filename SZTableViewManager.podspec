@@ -11,7 +11,6 @@ Pod::Spec.new do |s|
   s.platform = :ios, '.0'
   s.requires_arc = true
   s.source_files = 'SZTableViewManager/Core', 'SZTableViewManager/CellItems'
-  s.public_header_files = 'SZTableViewManager/Core/*.h', 'SZTableViewManager/CellItems/*.h'
   # Swift support uses dynamic frameworks and is therefore only supported on iOS > 8.
   s.ios.deployment_target = '8.0'
 end

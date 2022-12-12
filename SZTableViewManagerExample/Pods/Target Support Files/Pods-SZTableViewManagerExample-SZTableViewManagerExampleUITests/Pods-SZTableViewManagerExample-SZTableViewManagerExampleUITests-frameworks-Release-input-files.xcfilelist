@@ -1,3 +1,4 @@
 ${PODS_ROOT}/Target Support Files/Pods-SZTableViewManagerExample-SZTableViewManagerExampleUITests/Pods-SZTableViewManagerExample-SZTableViewManagerExampleUITests-frameworks.sh
+${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework
 ${BUILT_PRODUCTS_DIR}/SZTableViewManager/SZTableViewManager.framework
 ${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework
