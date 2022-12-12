@@ -8,23 +8,13 @@
 import Foundation
 import UIKit
 
-protocol SZTableViewManagerDelegate : UITableViewDelegate {
-    
-}
-
-public class SZTableViewManager : NSObject {
-    // outer delegate
-    weak var szdelegate: SZTableViewManagerDelegate?
-    
-    // sections
+public class SZTableViewManager : NSObject {    // sections
     fileprivate var sectionList: [SZTableViewSection] = [SZTableViewSection]()
     
     // tableview 由外部自行管理
     fileprivate weak var tableview: UITableView?
     
     deinit {
-        szdelegate = nil
-        
         // 清理tableview
         tableview?.delegate = self
         tableview?.dataSource = self
