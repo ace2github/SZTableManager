@@ -1,27 +1,24 @@
 PODS:
   - Kingfisher (4.10.1)
   - SnapKit (4.2.0)
-  - SZTableViewManager (0.1)
+  - SZTableViewManager (0.1.1)
 
 DEPENDENCIES:
   - Kingfisher
   - SnapKit
-  - SZTableViewManager (from `../`)
+  - SZTableViewManager (= 0.1.1)
 
 SPEC REPOS:
   trunk:
     - Kingfisher
     - SnapKit
-
-EXTERNAL SOURCES:
-  SZTableViewManager:
-    :path: "../"
+    - SZTableViewManager
 
 SPEC CHECKSUMS:
   Kingfisher: c148cd7b47ebde9989f6bc7c27dcaa79d81279a0
   SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
-  SZTableViewManager: 30122b152a8346e4a4f619af3e9beb5d4c5630c3
+  SZTableViewManager: 8a20560defaf9041ce6983d534d28847b5735d96
 
-PODFILE CHECKSUM: 410ca6fbf09614ecd0ae05d597adb9d8504cf7f1
+PODFILE CHECKSUM: 46ec52e814f6cabcf0cfdc594360b1aa81552c2c
 
 COCOAPODS: 1.11.3

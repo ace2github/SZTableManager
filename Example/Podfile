@@ -6,7 +6,9 @@ target 'SZTableViewManagerExample' do
   use_frameworks!
   
   platform :ios, '8.0'
-  pod 'SZTableViewManager', :path => '../'
+  # pod 'SZTableViewManager', :path => '../'
+  pod 'SZTableViewManager', '0.1.1'
+  
   # Pods for SZTableViewManagerExample
   
   pod 'SnapKit'
