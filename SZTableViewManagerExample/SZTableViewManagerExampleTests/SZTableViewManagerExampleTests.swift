@@ -2,7 +2,7 @@
 //  SZTableViewManagerExampleTests.swift
 //  SZTableViewManagerExampleTests
 //
-//  Created by Hui on 2022/12/9.
+//  Created by Hui on 2022/12/12.
 //
 
 import XCTest
