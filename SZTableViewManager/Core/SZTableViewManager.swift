@@ -119,14 +119,14 @@ extension SZTableViewManager : UITableViewDelegate {
         if let sectionItem = safeSection(section) {
             return CGFloat(sectionItem.headerHeight)
         }
-        return UITableView.automaticDimension
+        return 0.0
     }
 
     public func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
         if let sectionItem = safeSection(section) {
             return CGFloat(sectionItem.footerHeight)
         }
-        return UITableView.automaticDimension
+        return 0.0
     }
 
     
