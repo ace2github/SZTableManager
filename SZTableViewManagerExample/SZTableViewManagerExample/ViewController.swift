@@ -16,9 +16,15 @@ class ViewController: UIViewController {
     
     let tblManager: SZTableViewManager = SZTableViewManager()
     
+    deinit {
+        // 清理tableview
+        print("\(String(describing: Self.self)) \(#function)")
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        self.view.backgroundColor = .orange
         self.view.addSubview(self.tableview)
         tblManager.bindTableView(self.tableview)
         

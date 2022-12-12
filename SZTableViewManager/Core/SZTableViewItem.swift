@@ -22,6 +22,12 @@ open class SZTableViewItem : NSObject {
         cellHeight = Self.calcCellHeight()
     }
     
+    #if SZTableViewManagerDebug
+    deinit {
+        print("\(String(describing: Self.self)) \(#function)")
+    }
+    #endif
+    
     // 当前cell对应的item
     public weak var section: SZTableViewSection?
     

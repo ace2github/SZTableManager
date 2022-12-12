@@ -15,9 +15,13 @@ public class SZTableViewManager : NSObject {    // sections
     fileprivate weak var tableview: UITableView?
     
     deinit {
+        #if SZTableViewManagerDebug
+        print("\(String(describing: Self.self)) \(#function)")
+        #endif
+        
         // 清理tableview
-        tableview?.delegate = self
-        tableview?.dataSource = self
+        tableview?.delegate = nil
+        tableview?.dataSource = nil
         tableview = nil
         
         sectionList.removeAll()

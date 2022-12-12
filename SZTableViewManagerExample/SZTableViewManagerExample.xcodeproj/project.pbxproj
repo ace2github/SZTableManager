@@ -11,7 +11,6 @@
 		171DBD1CB1EA56B9B12B87C5 /* Pods_SZTableViewManagerExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D610A003DDE3C7792CF009D3 /* Pods_SZTableViewManagerExample.framework */; };
 		5C920CDC6E9F5433D8071254 /* Pods_SZTableViewManagerExample_SZTableViewManagerExampleUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A38CE21E9141A9D1247E59F4 /* Pods_SZTableViewManagerExample_SZTableViewManagerExampleUITests.framework */; };
 		A367CE5C29430A9A00BEB024 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A367CE5B29430A9A00BEB024 /* AppDelegate.swift */; };
-		A367CE5E29430A9A00BEB024 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A367CE5D29430A9A00BEB024 /* SceneDelegate.swift */; };
 		A367CE6029430A9A00BEB024 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A367CE5F29430A9A00BEB024 /* ViewController.swift */; };
 		A367CE6329430A9A00BEB024 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A367CE6129430A9A00BEB024 /* Main.storyboard */; };
 		A367CE6829430A9C00BEB024 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A367CE6629430A9C00BEB024 /* LaunchScreen.storyboard */; };
@@ -19,6 +18,7 @@
 		A367CE7D29430A9C00BEB024 /* SZTableViewManagerExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A367CE7C29430A9C00BEB024 /* SZTableViewManagerExampleUITests.swift */; };
 		A367CE7F29430A9C00BEB024 /* SZTableViewManagerExampleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A367CE7E29430A9C00BEB024 /* SZTableViewManagerExampleUITestsLaunchTests.swift */; };
 		A367CE8D29431DA300BEB024 /* ImageTitleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A367CE8C29431DA300BEB024 /* ImageTitleCell.swift */; };
+		A39639172946D3EE00C27D19 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39639162946D3EE00C27D19 /* MainViewController.swift */; };
 		A3C7545A2943332C001F8A9A /* BigImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C754592943332C001F8A9A /* BigImageCell.swift */; };
 		A3C7545C294335A3001F8A9A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3C7545B294335A3001F8A9A /* Assets.xcassets */; };
 /* End PBXBuildFile section */
@@ -47,7 +47,6 @@
 		652861E1F48A281E3823C44C /* Pods-SZTableViewManagerExample-SZTableViewManagerExampleUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SZTableViewManagerExample-SZTableViewManagerExampleUITests.debug.xcconfig"; path = "Target Support Files/Pods-SZTableViewManagerExample-SZTableViewManagerExampleUITests/Pods-SZTableViewManagerExample-SZTableViewManagerExampleUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		A367CE5829430A9A00BEB024 /* SZTableViewManagerExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SZTableViewManagerExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A367CE5B29430A9A00BEB024 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A367CE5D29430A9A00BEB024 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		A367CE5F29430A9A00BEB024 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A367CE6229430A9A00BEB024 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A367CE6729430A9C00BEB024 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -59,6 +58,7 @@
 		A367CE7E29430A9C00BEB024 /* SZTableViewManagerExampleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SZTableViewManagerExampleUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		A367CE8C29431DA300BEB024 /* ImageTitleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageTitleCell.swift; sourceTree = "<group>"; };
 		A38CE21E9141A9D1247E59F4 /* Pods_SZTableViewManagerExample_SZTableViewManagerExampleUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SZTableViewManagerExample_SZTableViewManagerExampleUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A39639162946D3EE00C27D19 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		A3C754592943332C001F8A9A /* BigImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigImageCell.swift; sourceTree = "<group>"; };
 		A3C7545B294335A3001F8A9A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = SOURCE_ROOT; };
 		BFDACB3EFFAB1484E46873AE /* Pods-SZTableViewManagerExampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SZTableViewManagerExampleTests.release.xcconfig"; path = "Target Support Files/Pods-SZTableViewManagerExampleTests/Pods-SZTableViewManagerExampleTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -132,7 +132,7 @@
 			children = (
 				A367CE8B29431A8400BEB024 /* CellItemDemo */,
 				A367CE5B29430A9A00BEB024 /* AppDelegate.swift */,
-				A367CE5D29430A9A00BEB024 /* SceneDelegate.swift */,
+				A39639162946D3EE00C27D19 /* MainViewController.swift */,
 				A367CE5F29430A9A00BEB024 /* ViewController.swift */,
 				A3C7545B294335A3001F8A9A /* Assets.xcassets */,
 				A367CE6129430A9A00BEB024 /* Main.storyboard */,
@@ -424,7 +424,7 @@
 				A3C7545A2943332C001F8A9A /* BigImageCell.swift in Sources */,
 				A367CE6029430A9A00BEB024 /* ViewController.swift in Sources */,
 				A367CE5C29430A9A00BEB024 /* AppDelegate.swift in Sources */,
-				A367CE5E29430A9A00BEB024 /* SceneDelegate.swift in Sources */,
+				A39639172946D3EE00C27D19 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -610,14 +610,16 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				OTHER_SWIFT_FLAGS = "$(inherited) -D COCOAPODS SZTableViewManagerDebug";
 				PRODUCT_BUNDLE_IDENTIFIER = SmartZero.SZTableViewManagerExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG DSZTableViewManagerDebug";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -640,14 +642,16 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				OTHER_SWIFT_FLAGS = "$(inherited) -D COCOAPODS SZTableViewManagerDebug";
 				PRODUCT_BUNDLE_IDENTIFIER = SmartZero.SZTableViewManagerExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

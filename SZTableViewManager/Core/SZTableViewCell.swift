@@ -24,6 +24,12 @@ open class SZTableViewCell: UITableViewCell, SZTableViewCellLifeCircel {
     weak var innerItem: SZTableViewItem? = nil
     var loaded: Bool = false
     
+    #if SZTableViewManagerDebug
+    deinit {
+        print("\(String(describing: Self.self)) \(#function)")
+    }
+    #endif
+    
     // 首次创建调用
     open func didLoad(_ item: SZTableViewItem?) {
         self.loaded = true

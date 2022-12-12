@@ -26,6 +26,10 @@ open class SZTableViewSection: NSObject {
     }
     
     deinit {
+        #if SZTableViewManagerDebug
+        print("\(String(describing: Self.self)) \(#function)")
+        #endif
+        
         cellItems.removeAll()
         
         footerView?.removeFromSuperview()
