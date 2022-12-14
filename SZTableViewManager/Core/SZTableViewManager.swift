@@ -60,8 +60,70 @@ public class SZTableViewManager : NSObject {    // sections
 }
 
 extension SZTableViewManager {
+    public func reloadTableView() {
+        assert(Thread.isMainThread, "非主线程刷新")
+        tableview?.reloadData()
+    }
+    public func reloadSectionIndexTitles() {
+        assert(Thread.isMainThread, "非主线程刷新")
+        tableview?.reloadSectionIndexTitles()
+    }
+    public func reloadInputViews() {
+        assert(Thread.isMainThread, "非主线程刷新")
+        tableview?.reloadInputViews()
+    }
+    
+    public func relaodTableView(_ section: SZTableViewSection) {
+        assert(Thread.isMainThread, "非主线程刷新")
+        let si = sectionIndex(section)
+        if si >= 0 {
+            tableview?.reloadSections(IndexSet(integer: si), with: UITableView.RowAnimation.automatic)
+        }
+    }
+    public func relaodTableView(_ section: SZTableViewSection, _ itemlist: [SZTableViewItem]) {
+        assert(Thread.isMainThread, "非主线程刷新")
+        let si = sectionIndex(section)
+        
+        if si >= 0{
+            var indexpathList = [IndexPath]()
+            
+            for item in itemlist {
+                let ri = section.itemIndex(item)
+                
+                // 一个异常直接退出
+                if ri < 0 {
+                    print("item index out of bounds")
+                    return
+                }
+                
+                indexpathList.append(IndexPath.init(row: ri, section: si))
+            }
+                
+            if indexpathList.count > 0 {
+                tableview?.reloadRows(at: indexpathList, with: UITableView.RowAnimation.automatic)
+            }
+        }
+    }
+    
+    public func clearDatasource(_ reload: Bool = true) {
+        assert(Thread.isMainThread, "非主线程刷新")
+
+        self.sectionList.removeAll()
+        if reload {
+            tableview?.reloadData()
+        }
+    }
+}
+    
+extension SZTableViewManager {
     public func addSection(_ section: SZTableViewSection) {
+        section.tablemanager = self
         self.sectionList.append(section);
+    }
+    public func addSectionList(_ list: [SZTableViewSection]) {
+        for s in list {
+            addSection(s)
+        }
     }
 
     public func deleteSection(_ section: SZTableViewSection){
@@ -70,12 +132,16 @@ extension SZTableViewManager {
         }
     }
     
-    func safeSection(_ index: Int) -> SZTableViewSection? {
+    public func safeSection(_ index: Int) -> SZTableViewSection? {
         guard index < self.sectionList.count else {
             return nil
         }
         
         return self.sectionList[index]
+    }
+    
+    public func sectionIndex(_ section: SZTableViewSection) -> Int {
+        return self.sectionList.firstIndex(of: section) ?? -1
     }
 }
 

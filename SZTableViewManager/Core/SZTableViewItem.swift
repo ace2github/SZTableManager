@@ -28,7 +28,7 @@ open class SZTableViewItem : NSObject {
     }
     #endif
     
-    // 当前cell对应的item
+    // 当前item对应的section
     public weak var section: SZTableViewSection?
     
     // 子类重写，返回与当前Item对应的Cell
@@ -45,6 +45,12 @@ open class SZTableViewItem : NSObject {
 extension SZTableViewItem {
     var cellClass: AnyClass {
         return Self.cellClass
+    }
+}
+
+extension SZTableViewItem {
+    public func reloadCurrentItem() {
+        section?.reloadCurrentSectionItem(self)
     }
 }
 

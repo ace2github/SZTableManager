@@ -42,7 +42,22 @@ class MainViewController: UIViewController {
                 }
             }
             section.addItem(item)
+            
+            if i == 3 {
+                DispatchQueue.main.asyncAfter(deadline: .now() + 3.0, execute: {
+                    item.title = item.title + " + update"
+                    item.reloadCurrentItem()
+                })
+            }
         }
         tblManager.addSection(section)
+        
+//        DispatchQueue.main.asyncAfter(deadline: .now() + 3.0, execute: {
+//            section.reloadCurrentSection()
+//        })
+//
+//        DispatchQueue.main.asyncAfter(deadline: .now() + 10.0, execute: {
+//            self.tblManager.clearDatasource()
+//        })
     }
 }
