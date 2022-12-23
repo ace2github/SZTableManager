@@ -40,9 +40,6 @@ public class SZTableViewManager : NSObject {    // sections
         // 配置TableView
         tblV.separatorStyle = .none
         tblV.layoutMargins = UIEdgeInsets.zero
-        tblV.estimatedRowHeight = 0
-        tblV.estimatedSectionFooterHeight = 0
-        tblV.estimatedSectionHeaderHeight = 0
         
         tableview = tblV
     }
@@ -245,7 +242,7 @@ extension SZTableViewManager : UITableViewDelegate {
             return 0.0
         }
         
-        return CGFloat(sectionItem.footerHeight)
+        return CGFloat(sectionItem.headerHeight)
     }
     
 

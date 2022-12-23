@@ -1,7 +1,7 @@
 PODS:
   - Kingfisher (4.10.1)
   - SnapKit (4.2.0)
-  - SZTableViewManager (0.1.2)
+  - SZTableViewManager (0.1.3)
 
 DEPENDENCIES:
   - Kingfisher
@@ -20,7 +20,7 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   Kingfisher: c148cd7b47ebde9989f6bc7c27dcaa79d81279a0
   SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
-  SZTableViewManager: 5a7924a4d12643ecb21c08b56c53652e56721750
+  SZTableViewManager: f735ea7447907f4c89797171b76a36a650fcb666
 
 PODFILE CHECKSUM: 841a92d6e7dc50e1ba6c374063203512681c7c2d
 

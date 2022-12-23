@@ -8,7 +8,6 @@
 import Foundation
 import UIKit
 
-
 open class SZTableViewItem : NSObject {
     // action
     open lazy var action: SZTableViewItemAction = {
@@ -63,7 +62,10 @@ open class SZTableViewItem : NSObject {
         return SZTableViewCell.self
     }
     
-    // 子类重写，返回当前Cell默认的高度
+    /*
+     * 子类重写，返回当前Cell默认的高度
+     * 如果是自动高度模式，则为预估高度值
+     */
     open func calcCellHeight() -> Float {
         return 40.0
     }
