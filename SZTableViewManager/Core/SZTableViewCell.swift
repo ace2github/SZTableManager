@@ -21,7 +21,7 @@ protocol SZTableViewCellLifeCircel {
 }
 
 open class SZTableViewCell: UITableViewCell, SZTableViewCellLifeCircel {
-    weak var innerItem: SZTableViewItem? = nil
+    public weak var innerItem: SZTableViewItem? = nil
     var loaded: Bool = false
     
     #if SZTableViewManagerDebug

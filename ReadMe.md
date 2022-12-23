@@ -71,7 +71,7 @@ class ImageTitleCellItem : SZTableViewItem {
         return ImageTitleCell.self
     }
     // 返回Cell的高度
-    override class func calcCellHeight() -> Float {
+    override func calcCellHeight() -> Float {
         return 80.0
     }
 }

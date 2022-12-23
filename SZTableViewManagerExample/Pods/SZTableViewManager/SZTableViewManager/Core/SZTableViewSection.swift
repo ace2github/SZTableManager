@@ -11,6 +11,8 @@ import UIKit
 open class SZTableViewSection: NSObject {
     var cellItems: [SZTableViewItem] = [SZTableViewItem]()
     
+    public weak var tablemanager: SZTableViewManager?
+    
     //MARK: Header
     public var headerHeight: Float = 0.0
     public var headerView: UIView? = nil
@@ -81,5 +83,20 @@ extension SZTableViewSection {
         if let index = self.cellItems.firstIndex(of: item) {
             self.cellItems.remove(at: index)
         }
+    }
+    
+    public func itemIndex(_ item: SZTableViewItem) -> Int {
+        return self.cellItems.firstIndex(of: item) ?? -1
+    }
+}
+
+
+extension SZTableViewSection {
+    public func reloadCurrentSection() {
+        tablemanager?.relaodTableView(self)
+    }
+    
+    public func reloadCurrentSectionItem(_ item: SZTableViewItem) {
+        tablemanager?.relaodTableView(self, [item])
     }
 }

@@ -14,10 +14,13 @@ open class SZTableViewSection: NSObject {
     public weak var tablemanager: SZTableViewManager?
     
     //MARK: Header
+    // 自动高度
+    public var estimatedHeader: Bool = false
     public var headerHeight: Float = 0.0
     public var headerView: UIView? = nil
     
     //MARK: Footer
+    public var estimatedFooter: Bool = false
     public var footerHeight: Float = 0.0
     public var footerView: UIView? = nil
 
@@ -70,6 +73,14 @@ extension SZTableViewSection {
         }
     }
     
+    public func replaceItemList(_ itemList: [SZTableViewItem]) {
+        removeAll()
+        
+        for item in itemList {
+            addItem(item)
+        }
+    }
+    
     public func insertItem(_ item: SZTableViewItem, _ atIndex:Int) -> Bool{
         if atIndex < self.cellItems.count {
             item.section = self
@@ -88,15 +99,25 @@ extension SZTableViewSection {
     public func itemIndex(_ item: SZTableViewItem) -> Int {
         return self.cellItems.firstIndex(of: item) ?? -1
     }
+    
+    public func itemCount() -> Int {
+        return self.cellItems.count
+    }
+    
+    public func removeAll() {
+        return self.cellItems.removeAll()
+    }
 }
 
 
 extension SZTableViewSection {
-    public func reloadCurrentSection() {
-        tablemanager?.relaodTableView(self)
+    public func reloadCurrentSection(_ animation: UITableView.RowAnimation = .automatic) {
+        tablemanager?.relaodTableView(self, animation)
     }
     
-    public func reloadCurrentSectionItem(_ item: SZTableViewItem) {
-        tablemanager?.relaodTableView(self, [item])
+    public func reloadCurrentSectionItem(_ item: SZTableViewItem,
+                                         _ animation: UITableView.RowAnimation = .automatic)
+    {
+        tablemanager?.relaodTableView(self, [item], animation)
     }
 }

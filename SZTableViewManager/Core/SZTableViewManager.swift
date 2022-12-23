@@ -27,6 +27,11 @@ public class SZTableViewManager : NSObject {    // sections
         sectionList.removeAll()
     }
     
+    public func bindAndRegister(_ tblV: UITableView, _ itemClsList: [SZTableViewItem.Type]) {
+        bindTableView(tblV)
+        registerList(itemClsList)
+    }
+    
     // 1、必须先绑定TableView
     public func bindTableView(_ tblV: UITableView) {
         tblV.delegate = self
@@ -61,27 +66,33 @@ public class SZTableViewManager : NSObject {    // sections
 
 extension SZTableViewManager {
     public func reloadTableView() {
-        assert(Thread.isMainThread, "非主线程刷新")
+        //assert(Thread.isMainThread, "非主线程刷新")
         tableview?.reloadData()
     }
     public func reloadSectionIndexTitles() {
-        assert(Thread.isMainThread, "非主线程刷新")
+        //assert(Thread.isMainThread, "非主线程刷新")
         tableview?.reloadSectionIndexTitles()
     }
     public func reloadInputViews() {
-        assert(Thread.isMainThread, "非主线程刷新")
+        //assert(Thread.isMainThread, "非主线程刷新")
         tableview?.reloadInputViews()
     }
     
-    public func relaodTableView(_ section: SZTableViewSection) {
-        assert(Thread.isMainThread, "非主线程刷新")
+    public func relaodTableView(_ section: SZTableViewSection,
+                                _ animation: UITableView.RowAnimation = .automatic)
+    {
+        //assert(Thread.isMainThread, "非主线程刷新")
         let si = sectionIndex(section)
         if si >= 0 {
-            tableview?.reloadSections(IndexSet(integer: si), with: UITableView.RowAnimation.automatic)
+            tableview?.reloadSections(IndexSet(integer: si), with: animation)
         }
     }
-    public func relaodTableView(_ section: SZTableViewSection, _ itemlist: [SZTableViewItem]) {
-        assert(Thread.isMainThread, "非主线程刷新")
+    
+    public func relaodTableView(_ section: SZTableViewSection,
+                                _ itemlist: [SZTableViewItem],
+                                _ animation: UITableView.RowAnimation = .automatic)
+    {
+        //assert(Thread.isMainThread, "非主线程刷新")
         let si = sectionIndex(section)
         
         if si >= 0{
@@ -106,7 +117,7 @@ extension SZTableViewManager {
     }
     
     public func clearDatasource(_ reload: Bool = true) {
-        assert(Thread.isMainThread, "非主线程刷新")
+        //assert(Thread.isMainThread, "非主线程刷新")
 
         self.sectionList.removeAll()
         if reload {
@@ -121,6 +132,12 @@ extension SZTableViewManager {
         self.sectionList.append(section);
     }
     public func addSectionList(_ list: [SZTableViewSection]) {
+        for s in list {
+            addSection(s)
+        }
+    }
+    public func replaceSectionList(_ list: [SZTableViewSection]) {
+        removeAll()
         for s in list {
             addSection(s)
         }
@@ -143,6 +160,14 @@ extension SZTableViewManager {
     public func sectionIndex(_ section: SZTableViewSection) -> Int {
         return self.sectionList.firstIndex(of: section) ?? -1
     }
+    
+    public func sectionCount() -> Int {
+        return self.sectionList.count
+    }
+    
+    public func removeAll() {
+        return self.sectionList.removeAll()
+    }
 }
 
 
@@ -159,12 +184,31 @@ extension SZTableViewManager : UITableViewDelegate {
     }
     
     public func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        let cellItem = safeSection(indexPath.section)?.safeItem(indexPath.row)
-        return CGFloat(cellItem?.cellHeight ?? 0.0)
+        guard let cellItem = safeSection(indexPath.section)?.safeItem(indexPath.row) else {
+            return 0.0
+        }
+        
+        if cellItem.estimated {
+            return UITableView.automaticDimension
+        }
+        
+        // 计算cell的高度，只计算一次，内部缓存
+        if cellItem.didCalcHeight == false {
+            cellItem.recalcCellHeight()
+        }
+        
+        return CGFloat(cellItem.cellHeight)
     }
     public func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
-        let cellItem = safeSection(indexPath.section)?.safeItem(indexPath.row)
-        return CGFloat(cellItem?.cellHeight ?? 0.0)
+        guard let cellItem = safeSection(indexPath.section)?.safeItem(indexPath.row) else {
+            return 0.0
+        }
+        
+        // 计算cell的高度，只计算一次，内部缓存
+        if cellItem.didCalcHeight == false {
+            cellItem.recalcCellHeight()
+        }
+        return CGFloat(cellItem.cellHeight)
     }
 
     //MARK: display
@@ -186,17 +230,42 @@ extension SZTableViewManager : UITableViewDelegate {
      */
     //MARK: header and fooder
     public func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        if let sectionItem = safeSection(section) {
-            return CGFloat(sectionItem.headerHeight)
+        guard let sectionItem = safeSection(section) else {
+            return 0.0
         }
-        return 0.0
+        
+        if sectionItem.estimatedHeader {
+            return UITableView.automaticDimension
+        }
+        
+        return CGFloat(sectionItem.headerHeight)
     }
+    public func tableView(_ tableView: UITableView, estimatedHeightForHeaderInSection section: Int) -> CGFloat {
+        guard let sectionItem = safeSection(section) else {
+            return 0.0
+        }
+        
+        return CGFloat(sectionItem.footerHeight)
+    }
+    
 
     public func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
-        if let sectionItem = safeSection(section) {
-            return CGFloat(sectionItem.footerHeight)
+        guard let sectionItem = safeSection(section) else {
+            return 0.0
         }
-        return 0.0
+        
+        if sectionItem.estimatedFooter {
+            return UITableView.automaticDimension
+        }
+        
+        return CGFloat(sectionItem.footerHeight)
+    }
+    public func tableView(_ tableView: UITableView, estimatedHeightForFooterInSection section: Int) -> CGFloat {
+        guard let sectionItem = safeSection(section) else {
+            return 0.0
+        }
+        
+        return CGFloat(sectionItem.footerHeight)
     }
 
     

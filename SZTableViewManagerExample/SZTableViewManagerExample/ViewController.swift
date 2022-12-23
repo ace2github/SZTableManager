@@ -71,6 +71,7 @@ class ViewController: UIViewController {
                 section.addItem(item)
             case 2:
                 let item = BigImageCellItem()
+                item.estimated = true
                 item.url = "img\(imgIndex%4 + 1)"
                 imgIndex += 1
                 item.action.selected = { (_ vi: SZTableViewItem? ,_ tblMgr: SZTableViewManager) in

@@ -24,6 +24,7 @@ class BigImageCell: SZTableViewCell {
             self.bigImgV.snp.makeConstraints { make in
                 make.leading.top.equalTo(self.contentView).offset(15)
                 make.trailing.bottom.equalTo(self.contentView).offset(-15)
+                make.height.equalTo(300)
             }
         }
     }
@@ -52,7 +53,8 @@ class BigImageCellItem : SZTableViewItem {
     override class var cellClass: AnyClass {
         return BigImageCell.self
     }
-    override class func calcCellHeight() -> Float {
-        return 200
+    override func calcCellHeight() -> Float {
+        return 10.0
+        //return 200
     }
 }

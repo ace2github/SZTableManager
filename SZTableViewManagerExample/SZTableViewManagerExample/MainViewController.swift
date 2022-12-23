@@ -43,6 +43,8 @@ class MainViewController: UIViewController {
             }
             section.addItem(item)
             
+            
+            // 模拟刷新页面数据
             if i == 3 {
                 DispatchQueue.main.asyncAfter(deadline: .now() + 3.0, execute: {
                     item.title = item.title + " + update"

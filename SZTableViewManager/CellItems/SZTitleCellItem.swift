@@ -14,7 +14,7 @@ public class SZTitleCellItem: SZTableViewItem {
     public override class var cellClass: AnyClass {
         return SZTitleCell.self
     }
-    public override class func calcCellHeight() -> Float {
+    public override func calcCellHeight() -> Float {
         return 44.0
     }
 }
